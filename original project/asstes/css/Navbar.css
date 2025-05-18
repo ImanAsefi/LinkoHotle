@@ -1,58 +1,56 @@
+body{
+    font-family: "IRANSANS";
+}
 ul{
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
-.nav-top{
+nav {
+    width: 75rem;
+    height: 5rem;
+    justify-self: center;
+    border-radius: 15px;
     background-color: #333;
-}
-.nav-top ul li{
-    float: right;
-}
-.nav-top ul li a{
-    padding: 10px;
-    display: block;
-    text-decoration: none;
-    color: #eee;
-}
-.nav-top ul li a:hover{
-    background-color: #555;
-    color: orange;
-}
-.clearfix::after{
-    display: block;
-    content:'';
-    clear: both; 
-}
-#nav {
-    background-color: #333;
+    list-style: none;
     display: flex;
     justify-content: space-between;
     padding: 0.5rem;
     top: 18px;
-    margin-top: 18px;
-    min-width: 48rem;
     box-shadow: 15px 12px 30px #00000063;
     z-index: 1;
-    margin-left: 25px;
 }
 .menu {
     display: flex;
     align-items: center;
 }
-#nav > h1{
+nav > h1{
+    font-size: 25px;
     color: #fff;
+    margin-left: 40px;
+    transition: 14s;
+}
+nav > h1:hover{
+    color: #767676;
+    font-size: 40px;
+    transition: 14s;
+    margin-left: 1000px;
+}
+
+.menu > li:hover > a:hover{
+    margin-bottom: 20px;
+    display: block;
+    transition: 1.2s;
 }
 .menu > li > a {
+    
     color: #fff;
     padding: 0.4rem;
-    margin: 0.3rem;
     font-size: 17px;
+    margin: 0.3rem;
     text-decoration: none;
-    transition: 0.8s;
+    transition: 1.2s;
 }
-.menu li a:hover {
+.menu > li > a:hover {
     background-color: orange;
     border-radius: 10px;
-    transition: 0.8s;
+    transition: 1.2s;
 }
