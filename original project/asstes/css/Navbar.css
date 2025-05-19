@@ -35,13 +35,12 @@ nav > h1:hover{
     margin-left: 1000px;
 }
 
-.menu > li:hover > a:hover{
+.menu > li:hover:not("no-hover") > a:hover{
     margin-bottom: 20px;
     display: block;
     transition: 1.2s;
 }
 .menu > li > a {
-    
     color: #fff;
     padding: 0.4rem;
     font-size: 17px;
@@ -53,4 +52,22 @@ nav > h1:hover{
     background-color: orange;
     border-radius: 10px;
     transition: 1.2s;
+}
+.menu > li > a > div{
+    transition: 0.4s;
+    position: absolute;
+    top: 150px;
+    right: 315px;
+    height: 150px;
+    width: 150px;
+    
+    background: #484848;
+    opacity: 0;
+    visibility: hidden;
+}
+.menu > li:hover > a:hover > div{
+    top: 90px;
+    opacity: 1;
+    visibility: visible;
+    border-top: 3px solid orange;
 }
