@@ -7,21 +7,26 @@ body{
   padding: 0;
   box-sizing: border-box;
 }
-.swiper {
-  width: 100%;
-  height: 100vh;
+.swiper{
+  border-radius: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 75rem;
+  height: 540px;
+  position: absolute;
 }
 
 .swiper-slide {
   display: flex;
   align-items: center;
   justify-content: center;
+  object-fit: cover;
 }
 
-.swiper-slide img {
+.swiper-slide > img {
   width: 100%;
   height: 100%;
- object-fit: cover; 
+  object-fit: cover;
 }
 
 .swiper-button-next,

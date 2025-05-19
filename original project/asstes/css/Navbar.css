@@ -5,6 +5,7 @@ ul{
     list-style: none;
 }
 nav {
+    margin-top: 25px;
     width: 75rem;
     height: 5rem;
     justify-self: center;
