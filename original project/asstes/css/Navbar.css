@@ -61,7 +61,7 @@ nav > h1:hover{
     right: 315px;
     height: 150px;
     width: 150px;
-    
+    z-index: ;
     background: #484848;
     opacity: 0;
     visibility: hidden;
