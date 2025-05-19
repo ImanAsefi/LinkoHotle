@@ -1,34 +1,80 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./asstes/css/Navbar.css">
-    <link rel="stylesheet" href="./asstes/css/style.css">
-    <link rel="stylesheet" href="./asstes/css/footer.css">
-    <link rel="stylesheet" href="./asstes/css/fonts.css">
-    <title>صفحه اصلی | هتل لینکو</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>linkohotle|لینکو هتل</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./asstes/css/footer.css">
+  <link rel="stylesheet" href="./asstes/css/fonts.css">
+  <link rel="stylesheet" href="./asstes/css/Navbar.css">
+  <link rel="stylesheet" href="../swiper/swiper-bundle.min.css" />
 </head>
 <body>
-    <main>
-        <nav id="nav">   
-            <ul class="menu">
-                <li><a href="">صفحه اصلی</a></li>
-                <li><a href="#about-info">تاریخچه</a></li>
-                <li><a href="">رستوران</a></li>
-                <li class="no-hover"><a href="">سرگرمی ها
-                    <div></div>
-                </a></li>
-                <li><a href="">اتاق</a></li>
-                <li><a href="">ورود</a></li>
-            </ul>
-            <h1 class="h1-nav">
-                Linko
-                    <span class="text-primary">
-                        <i class="fab fa-edge"></i>
-                    </span>
-            </h1>
-        </nav>
-    </main>
+  <!-- start Navbar -->
+  <main>
+    <nav id="nav">   
+      <ul class="menu">
+          <li><a href="">صفحه اصلی</a></li>
+          <li><a href="#about-info">تاریخچه</a></li>
+          <li><a href="">رستوران</a></li>
+          <li class="no-hover"><a href="">سرگرمی ها
+              <div></div>
+          </a></li>
+          <li><a href="">اتاق</a></li>
+          <li><a href="">ورود</a></li>
+      </ul>
+      <h1 class="h1-nav">
+          Linko
+              <span class="text-primary">
+                  <i class="fab fa-edge"></i>
+              </span>
+      </h1>
+    </nav>
+  </main>
+  <!-- finish Navbar -->
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="./asstes/images/slider4.jpg" alt="Slide 1">
+      </div>
+      <div class="swiper-slide">
+        <img src="./asstes/images/slider5.jpg" alt="Slide 2">
+      </div>
+      <div class="swiper-slide">
+        <img src="./asstes/images/slider6.jpg" alt="Slide 3">
+      </div> 
+      <div class="swiper-slide">
+        <img src="./asstes/images/slider1.jpg" alt="Slide 3">
+      </div> 
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      new Swiper(".swiper", {
+        loop: true,
+        effect: "fade",
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        fadeEffect: {
+          crossFade: true,
+        },
+      });
+    });
+  </script>
 </body>
 </html>
