@@ -6,6 +6,8 @@ ul{
 }
 nav {
     margin-top: 25px;
+    margin-right: auto;
+    margin-left: auto;
     width: 75rem;
     height: 5rem;
     justify-self: center;
@@ -27,15 +29,11 @@ nav > h1{
     font-size: 25px;
     color: #fff;
     margin-left: 40px;
-    transition: 14s;
+    margin-top: 13px;
 }
-nav > h1:hover{
-    color: #767676;
-    font-size: 40px;
-    transition: 14s;
-    margin-left: 1000px;
+.icon-nav{
+    color: orange;
 }
-
 .menu > li:hover:not("no-hover") > a:hover{
     margin-bottom: 20px;
     display: block;
@@ -61,7 +59,7 @@ nav > h1:hover{
     right: 315px;
     height: 150px;
     width: 150px;
-    z-index: ;
+    z-index:99 ;
     background: #484848;
     opacity: 0;
     visibility: hidden;
