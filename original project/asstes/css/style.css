@@ -1,12 +1,14 @@
-body{
-  font-family: "IRANSANS";
-  height: 100%;;
-}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+body{
+  font-family: "IRANSANS";
+  height: 100%;;
+}
+
 .swiper{
   border-radius: 15px;
   margin-top: 25px;
@@ -37,4 +39,63 @@ body{
 .swiper-pagination-bullet {
   background: white;
   opacity: 0.8;
+}
+
+.branchs{
+  width: 75rem;
+  height: 1385px;
+  justify-self: center;
+  border-radius: 15px;
+  background: url(../images/pexels-deeanacreates-2565222.jpg) no-repeat center center / cover;
+  margin-bottom: 25px;
+}
+
+.background-div{
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg , #00000090, #00000090);
+  border-radius: 15px;
+}
+
+.background-div > .branchs-children > img{
+  margin-top: 70px;
+  margin-right: 46rem;
+  border-radius: 15px;
+
+}
+
+.background-div > .first-branch > h1{
+  color: white;
+  margin-top: -591px;
+  font-size:30px;
+  margin-right: 40px;
+}
+
+.background-div > .second-branch > h1{
+  color: white;
+  margin-top: -591px;
+  font-size:30px;
+  margin-right: 40px;
+}
+
+.background-div > .second-branch > img{
+  margin-right: 48.2rem;
+  margin-top: 180px;
+}
+
+.h1-color-orange{
+  color: orange;
+}
+
+.first-branch-p{
+  color: white;
+  width: 600px;
+  margin-top: 10px;
+  margin-right: 40px;
+}
+.second-branch-p{
+  color: white;
+  width: 650px;
+  margin-top: 10px;
+  margin-right: 40px;
 }
