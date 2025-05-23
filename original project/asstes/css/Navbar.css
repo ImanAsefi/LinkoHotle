@@ -51,6 +51,7 @@ nav > h1{
     background-color: orange;
     border-radius: 10px;
     transition: 1.2s;
+    box-shadow: 5px 4px 15px rgba(255, 166, 0, 0.575);
 }
 .menu > li > a > div{
     transition: 0.4s;

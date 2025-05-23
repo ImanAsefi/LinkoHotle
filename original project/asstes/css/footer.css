@@ -1,5 +1,62 @@
-
-
 body{
     font-family: "IRANSANS";
+}
+.footer{
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 3rem 1rem 3rem;
+}
+.content-footer{
+  display: flex;
+  justify-content: space-evenly;
+}
+.title-footer{
+    text-align: center;
+    margin:1rem 0;
+}
+.title-footer::after,
+.title-footer::before{
+  background-color: #a7a7a7a2;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  margin: 0 10px;
+  width: 25%;
+}
+.first-title-footer{
+    font-size: 40px;
+    font-weight: bold;
+}
+.title-footer>p{
+    font-size: 10px;
+}
+.icons-footer{
+    display:flex ;
+    justify-content: space-evenly;
+}
+.footer-icon{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.paragraph-footer{
+    color: orange;
+    font-size: 1.2rem;
+}
+.item-footer{
+    border-left: 1px solid #a7a7a7a2;
+    text-align: center;
+    padding:0 3rem;
+}
+.item4{
+    border-left: none;
+}
+.footer-last-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    border-top: 1px solid #a7a7a7a2;
+    padding-top: 25px;
 }
