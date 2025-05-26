@@ -80,6 +80,7 @@ nav > h1{
     position: absolute;
     top: 4rem; 
     right: 510px;
+    
     margin-left: 5550px;
     transition: all 200ms ease-in-out;
     background-color: #333333e4;
