@@ -79,9 +79,6 @@ nav > h1{
 .main-header__dropdown{
     position: absolute;
     top: 4rem; 
-    right: 510px;
-    
-    margin-left: 5550px;
     transition: all 200ms ease-in-out;
     background-color: #333333e4;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.12);
