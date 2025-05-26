@@ -1,11 +1,9 @@
 body{
     font-family: "IRANSANS";
 }
-
 ul{
     list-style: none;
 }
-
 nav {
     margin-top: 25px;
     margin-right: auto;
@@ -24,32 +22,27 @@ nav {
     box-shadow: 15px 12px 30px #00000063;
     z-index: 1;
 }
-
 .menu {
     display: flex;
     align-items: center;
 }
-
 nav > h1{
     font-size: 30px;
     color: #fff;
     margin-left: -480px;
     margin-top: 16.5px;
 }
-
 .icon-nav{
     font-size: 30px;
     margin-top: 25px;
     color: orange;
 }
-
 .menu > li:hover > a:hover{
     margin-bottom: 10px;
     margin-left: 5px;
     display: block;
     transition: 0.4s;
 }
-
 .menu > li > a {
     color: #fff;
     padding: 0.4rem;
@@ -59,20 +52,12 @@ nav > h1{
     transition: 0.4s;
     border-radius: 3px;
 }
-
 .menu > li > a:hover {
     background-color: orange;
-<<<<<<< HEAD
-    border-radius: 5px;
-    transition: 0.4s;
-=======
     border-radius: 10px;
     transition: 1.2s;
     box-shadow: 5px 4px 15px rgba(255, 166, 0, 0.575);
->>>>>>> 7b9594e5352cb68f7f506533f731b91308851fba
 }
-
-
 /* .menu > li > a > div{
     transition: 0.4s;
     position: absolute;
@@ -91,12 +76,10 @@ nav > h1{
     visibility: visible;
     border-top: 3px solid orange;
 } */
-
 .main-header__dropdown{
     position: absolute;
-    top: 4rem;
-    left: 0;
-    right: 333px;
+    top: 4rem; 
+    right: 369px;
     transition: all 200ms ease-in-out;
     background-color: #333333e4;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.12);
@@ -112,13 +95,11 @@ nav > h1{
     height: 90px;
     flex-wrap: wrap;
 }
-
 .main-header__item:hover .main-header__dropdown{
     opacity: 1;
     visibility: visible;
     top: 6.5rem;
 }
-
 .main-header__dropdown-link{
     display: block;
     padding: 0.6rem 2rem;
@@ -126,17 +107,15 @@ nav > h1{
     transition: all 400ms ease;
     text-decoration: none;
 }
-
 .main-header__dropdown-item{
     border-bottom: 2px solid orange;
     margin-top: -15px;
     height: 80%;
+    transition-duration: 0.7s;
 }
-
 .main-header__dropdown-item:hover{
-    background-color: #333333f9;
+    background-color: #252525f9;
 }
-
 .second-child{
     border-bottom: none;
     margin-top: 0px;
