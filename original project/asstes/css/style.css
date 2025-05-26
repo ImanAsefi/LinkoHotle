@@ -129,7 +129,7 @@ a{
 .image-gallery__top>img,
 .image-gallery__bottom>img{
   border-radius:15px;
-  width: 410px;
+  width: 380px;
   transition-duration: 0.8s;
   box-shadow: 15px 12px 20px #00000063;
 }
@@ -147,7 +147,7 @@ a{
 .event-box__content{
   display: flex;
   justify-content: space-evenly;
-  margin: 20px 30px;
+  margin: 8px auto;
 }
 .event-box__item{
   background-color: #333;
@@ -156,7 +156,7 @@ a{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 15px 10px;
   margin: 5px;
   border: 2px solid orange;
   border-radius: 15px;
@@ -167,13 +167,16 @@ a{
 }
 .event-box__item>p{
   color: #fff;
+  text-align: center;
+  max-width: 380px;
 }
 .event-box__item>h3{
   margin: 8px 0;
 }
 .event-box__image{
-  width: 375px;
+  width: 345px;
   border-radius:15px;
+  margin:0 5px ;
 }
 .event-box__btn{
   border: 2px solid orange;

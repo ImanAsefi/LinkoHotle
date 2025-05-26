@@ -1,10 +1,12 @@
 body{
     font-family: "IRANSANS";
+    overflow-x: hidden;
 }
 .footer{
     background-color: #333;
     color: #fff;
     padding: 1rem 3rem 1rem 3rem;
+    width: 100vw;
 }
 .content-footer{
   display: flex;
