@@ -17,10 +17,10 @@ input , button{
     outline: none;
 }
 .wrapper{
-    width: 330px;
-    height: 380px;
+    width: 280px;
+    height: 350px;
     position: relative;
-    margin-top: 5rem;
+    margin-top: 7rem;
 }
 .shape{
     width: 180px;
