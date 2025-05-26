@@ -53,7 +53,7 @@ input , button{
 .form-title{
     font-size: 40px;
     text-align: center;
-    margin-top: -15px;
+    margin-top: -20px;
     margin-bottom:30px ;
     color: orange;
     font-family: sans-serif;
@@ -71,6 +71,7 @@ input , button{
     width: 300px;
     position: absolute;
     margin-bottom: 57px;
+    margin-right: 16px;
 }
 .form-input{
     font-size:14px ;
@@ -84,9 +85,6 @@ input , button{
     color: #fff;
     margin-top: 20px;
 }
-/* .form-input::placeholder{
-    color: #e5e5e5;
-} */
 .parent-btn__form{
     display: flex;
     flex-wrap: nowrap;
@@ -101,11 +99,10 @@ input , button{
     background-color: rgba(255,255,255 , 0.15);
     color: #fff;
     border-radius:5px ;
-    padding: 10px 50px;
+    padding: 9px 38px;
     display: block;
     cursor: pointer;
     border: 2px solid rgba(255, 166, 0, 0.596);
-    width: 100%;
     transition-duration: 1s;
     margin-top: 10px;
 }
