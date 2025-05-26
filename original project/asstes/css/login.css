@@ -21,6 +21,7 @@ input , button{
     height: 350px;
     position: relative;
     margin-top: 7rem;
+    margin-bottom: 10rem;
 }
 .shape{
     width: 180px;

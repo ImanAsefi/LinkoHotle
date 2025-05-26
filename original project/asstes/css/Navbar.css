@@ -29,7 +29,7 @@ nav {
 nav > h1{
     font-size: 30px;
     color: #fff;
-    margin-left: -480px;
+    margin-left: -420px;
     margin-top: 16.5px;
 }
 .icon-nav{
@@ -79,12 +79,13 @@ nav > h1{
 .main-header__dropdown{
     position: absolute;
     top: 4rem; 
-    right: 369px;
+    right: 510px;
+    margin-left: 5550px;
     transition: all 200ms ease-in-out;
     background-color: #333333e4;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.12);
     border-radius: 5px;
-    width: 10rem;
+    width: 8rem;
     z-index: 99;
     padding: 1rem 0;
     border-bottom: 4px solid var(--primary-color);
@@ -93,7 +94,8 @@ nav > h1{
     transition-duration: 0.5s;
     border: 2px solid orange;
     height: 90px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    text-align: center;
 }
 .main-header__item:hover .main-header__dropdown{
     opacity: 1;
