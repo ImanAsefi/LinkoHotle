@@ -6,6 +6,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-y: hidden;
 }
 * {
   margin: 0;
@@ -18,9 +19,9 @@ input , button{
 }
 .wrapper{
     width: 280px;
-    height: 350px;
+    height: 380px;
     position: relative;
-    margin-top: 7rem;
+    margin-top: 6rem;
 }
 .shape{
     width: 180px;
@@ -120,6 +121,10 @@ input , button{
     transform: rotate(360deg);
   }
 }
+.sigin{
+    width: 280px;
+    height: 350px;
+}
 .square{
     width: 150px;
     height: 150px;
@@ -144,11 +149,13 @@ input , button{
     top: 160px;
     right: 100px;
 }
-.go-login{
+.go-login,
+.go-signin{
     display: flex;
     font-size: 15px;
 }
-.go-login>a{
+.go-login>a,
+.go-signin>a{
     padding-right: 5px;
     color: #fff;
 }
