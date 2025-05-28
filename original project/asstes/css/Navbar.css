@@ -58,24 +58,6 @@ nav > h1{
     transition: 1.2s;
     box-shadow: 5px 4px 15px rgba(255, 166, 0, 0.575);
 }
-/* .menu > li > a > div{
-    transition: 0.4s;
-    position: absolute;
-    top: 150px;
-    right: 315px;
-    height: 150px;
-    width: 150px;
-    z-index:99 ;
-    background: #484848;
-    opacity: 0;
-    visibility: hidden;
-}
-.menu > li:hover > a:hover > div{
-    top: 90px;
-    opacity: 1;
-    visibility: visible;
-    border-top: 3px solid orange;
-} */
 .main-header__dropdown{
     position: absolute;
     top: 4rem; 
