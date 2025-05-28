@@ -1,10 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body{
-    font-family: "IRANSANS";
+  font-family: "IRANSANS";
+  height: 100%;
 }
 ul{
-    list-style: none;
+  list-style: none;
+  direction: rtl;
 }
-nav {
+a{
+  text-decoration: none;
+}
+nav{
     margin-top: 25px;
     margin-right: auto;
     margin-left: auto;
@@ -26,15 +36,16 @@ nav {
     display: flex;
     align-items: center;
 }
-nav > h1{
+#nav > .h1-nav{
     font-size: 30px;
     color: #fff;
-    margin-left: -420px;
-    margin-top: 16.5px;
+    margin-left: 40px;
+    margin-top: 16px;
 }
 .icon-nav{
     font-size: 30px;
     margin-top: 25px;
+    margin-left: -325px;
     color: orange;
 }
 .menu > li:hover > a:hover{

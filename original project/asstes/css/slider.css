@@ -1,0 +1,24 @@
+.swiper{
+  border-radius: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 75rem;
+  height: 540px;
+  position: absolute;
+  box-shadow: 15px 12px 30px #00000063;
+}
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+}
+.swiper-slide > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-pagination-bullet {
+  background: white;
+  opacity: 0.8;
+}
