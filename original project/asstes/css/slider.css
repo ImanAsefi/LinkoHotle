@@ -12,8 +12,7 @@
   text-align: center;
   color: white;
 }
-
-/* .swiper{
+.swiper{
   border-radius: 15px;
   margin-top: 25px;
   margin-bottom: 25px;
@@ -36,4 +35,4 @@
 .swiper-pagination-bullet {
   background: white;
   opacity: 0.8;
-} */
+}

@@ -39,12 +39,13 @@ nav{
 #nav > .h1-nav{
     font-size: 30px;
     color: #fff;
-    margin-left: -420px;
+    margin-left: 30px;
     margin-top: 16px;
 }
 .icon-nav{
     font-size: 30px;
     margin-top: 25px;
+    margin-left: -340px;
     color: orange;
 }
 .menu > li:hover > a:hover{
