@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="asstes/css/Navbar.css">
     <link rel="stylesheet" href="asstes/css/fonts.css">
     <link rel="stylesheet" href="asstes/css/slider.css">
 
 </head>
+
 <body>
     <main>
         <nav id="nav">
@@ -36,7 +41,7 @@
             </ul>
         </nav>
     </main>
-    <div class="swiper">
+    <!-- <div class="swiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <img src="./asstes/images/slider1.jpg" alt="Slide 1">
@@ -63,6 +68,33 @@
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
+    </div> -->
+    <div class="owl-carousel owl-theme">
+        <div class="item" data-animation-out="fadeOut" data-animation-in="fadeIn">Slide 1</div>
+        <div class="item" data-animation-out="slideOutDown" data-animation-in="flipInX">Slide 2</div>
+        <div class="item" data-animation-out="rotateOutDownLeft" data-animation-in="rotateInUpLeft">Slide 3</div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"></script>
+
+    <script>
+        $(document).ready(function () {
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                items: 1,
+                animateOut: 'fadeOut',
+                animateIn: 'fadeIn',
+                loop: true,
+                margin: 10,
+                nav: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                smartSpeed: 450
+            });
+        });
+    </script>
 </body>
+
 </html>
