@@ -1,7 +1,7 @@
 @import 'animate.css';
 
 .owl-carousel .item {
-  height: 540px;
+  height: 400px;
   width: 75rem;
   margin: 0 auto;
   margin-top: 25px;
@@ -12,6 +12,39 @@
   text-align: center;
   color: white;
 }
+
+.image-div1{
+  width: 550px;
+  height: 350px;
+  margin-left: 38rem;
+  margin-top: -275px;
+  object-fit: cover;
+  background: url(../images/pexels-life-of-pix-67468.jpg) center center / cover;
+  border-radius: 15px;
+}
+
+.image-div2{
+  width: 550px;
+  height: 350px;
+  margin-left: 38rem;
+  margin-top: -275px;
+  object-fit: cover;
+  background: url(../images/pexels-mateusz-dach-99805-3660229.jpg) center center / cover;
+  border-radius: 15px;
+}
+.item > h1{
+  color: orange;
+  margin-right: 550px;
+  margin-top: 60px;
+  margin-bottom: 5px;
+}
+
+.item > p{
+  max-width: 520px;
+  direction: rtl;
+  margin-left: 35px;
+}
+
 .swiper{
   border-radius: 15px;
   margin-top: 25px;
