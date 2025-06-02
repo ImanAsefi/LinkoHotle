@@ -84,13 +84,3 @@ body{
     height: 60%;
     background-color:rgba(255, 166, 0, 0.438);
 }
-.span-footer::after{
-    content: "";
-    position: absolute;
-    right: 610px;
-    width: 0.2rem;
-    height: 3.4rem;
-    border-radius: 3rem;
-    background-color: orange;
-    transform: rotate(-8deg);
-}
