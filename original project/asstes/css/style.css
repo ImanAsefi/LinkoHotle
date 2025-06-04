@@ -3,19 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
+body {
   font-family: "IRANSANS";
   height: 100%;
 }
-ul{
+ul {
   list-style: none;
 }
-a{
+a {
   text-decoration: none;
 }
 
 .after::after,
-.after::before{
+.after::before {
   background-color: #a7a7a7a2;
   content: "";
   display: inline-block;
@@ -26,60 +26,61 @@ a{
   width: 30%;
 }
 
-.branchs{
+.branchs {
   width: 75rem;
   height: 1385px;
   justify-self: center;
   border-radius: 15px;
-  background: url('../images/pexels-deeanacreates-2565222.jpg')no-repeat center center/cover;
+  background: url("../images/pexels-deeanacreates-2565222.jpg") no-repeat center
+    center/cover;
   margin: 15px auto 25px auto;
 }
-.background-div{
+.background-div {
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(90deg , #00000090, #00000090);
+  background-image: linear-gradient(90deg, #00000090, #00000090);
   border-radius: 15px;
 }
-.background-div > .branchs-children > img{
+.background-div > .branchs-children > img {
   margin-top: 70px;
   margin-right: 46rem;
   border-radius: 15px;
 }
-.background-div > .first-branch > h1{
+.background-div > .first-branch > h1 {
   color: white;
   margin-top: -591px;
-  font-size:30px;
+  font-size: 30px;
   margin-right: 40px;
 }
-.background-div > .second-branch > h1{
+.background-div > .second-branch > h1 {
   color: white;
   margin-top: -591px;
-  font-size:30px;
+  font-size: 30px;
   margin-right: 40px;
 }
-.background-div > .second-branch > img{
+.background-div > .second-branch > img {
   margin-right: 48.2rem;
   margin-top: 180px;
 }
-.h1-color-orange{
+.h1-color-orange {
   color: orange;
 }
-.first-branch-p{
+.first-branch-p {
   color: white;
   width: 600px;
   margin-top: 10px;
   margin-right: 40px;
 }
-.second-branch-p{
+.second-branch-p {
   color: white;
   width: 650px;
   margin-top: 10px;
   margin-right: 40px;
 }
-.section-title{
+.section-title {
   margin: 50px;
 }
-.section-title{
+.section-title {
   text-align: center;
   font-size: 30px;
   color: orange;
@@ -87,36 +88,37 @@ a{
   margin-bottom: 20px;
 }
 .image-gallery__top,
-.image-gallery__bottom{
+.image-gallery__bottom {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   margin: 20px;
 }
-.image-gallery__top>img,
-.image-gallery__bottom>img{
-  border-radius:15px;
+.image-gallery__top > img,
+.image-gallery__bottom > img {
+  margin: 0;
+  border-radius: 15px;
   width: 380px;
   transition-duration: 0.8s;
   box-shadow: 15px 12px 20px #00000063;
 }
-.image-gallery__top>img:hover,
-.image-gallery__bottom>img:hover{
+.image-gallery__top > img:hover,
+.image-gallery__bottom > img:hover {
   transform: translateY(7px);
 }
-.event-box__title{
+.event-box__title {
   text-align: center;
   font-size: 30px;
   color: orange;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.event-box__content{
+.event-box__content {
   display: flex;
   justify-content: space-evenly;
   margin: 8px auto;
 }
-.event-box__item{
+.event-box__item {
   background-color: #333;
   box-sizing: border-box;
   display: flex;
@@ -129,23 +131,23 @@ a{
   border-radius: 15px;
   box-shadow: 15px 12px 30px #00000063;
 }
-.event-box__item>h3{
+.event-box__item > h3 {
   color: #fff;
 }
-.event-box__item>p{
+.event-box__item > p {
   color: #fff;
   text-align: center;
   max-width: 380px;
 }
-.event-box__item>h3{
+.event-box__item > h3 {
   margin: 8px 0;
 }
-.event-box__image{
+.event-box__image {
   width: 345px;
-  border-radius:15px;
-  margin:0 5px ;
+  border-radius: 15px;
+  margin: 0 5px;
 }
-.event-box__btn{
+.event-box__btn {
   border: 2px solid orange;
   color: #fff;
   padding: 5px 18px;
@@ -153,8 +155,105 @@ a{
   border-radius: 10px;
   transition-duration: 1s;
 }
-.event-box__btn:hover{
+.event-box__btn:hover {
   background-color: orange;
   box-shadow: 5px 4px 15px rgba(255, 166, 0, 0.575);
   transition-duration: 1s;
+}
+.form-group {
+  margin-bottom: 30px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 7px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.btn-submit {
+  padding: 10px 20px;
+  margin-right: 190px;
+  color: #fff;
+  background-color: #333;
+  border-radius: 5px;
+}
+.btn-submit:hover {
+  color: orange;
+  transition: 1.1s;
+}
+.bg-dark {
+  color: #fff;
+  background-color: #444;
+  margin-bottom: -10px;
+}
+.bg-dark p {
+  text-align: center;
+}
+#contact {
+  border-radius: 15px;
+  display: flex;
+  background-color: #333;
+  font-weight: 600;
+  color: #fff;
+  width: 75rem;
+  margin: 40px auto;
+  box-shadow: 15px 12px 30px #00000063;
+}
+.contact-us > h2{
+  text-align: center;
+}
+.title-form{
+  color: orange;
+}
+.paragraph-form{
+  text-align: center;
+}
+.contact-us {
+  padding: 1rem;
+  flex: 1;
+}
+.contact-us p {
+  margin: 1rem 0;
+}
+.form-group {
+  margin: 1rem;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+input::placeholder,
+input[button],
+textarea {
+  font-family: "IRANSANS";
+}
+.form-group input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: none;
+}
+.btn {
+  background-color: orange;
+}
+.btn:hover {
+  transition: 0.7s;
+  background-color: orange;
+  color: #fff;
+}
+.map {
+  flex: 1;
+  border-radius: 15px;
+}
+iframe{
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.text-primary {
+  color: orange;
 }
