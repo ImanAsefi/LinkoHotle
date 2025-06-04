@@ -158,19 +158,3 @@ a{
   box-shadow: 5px 4px 15px rgba(255, 166, 0, 0.575);
   transition-duration: 1s;
 }
-
-.div-title{
-  width: 75rem;
-  margin-left: 35px;
-  margin-bottom: 25px;
-  border-radius: 15px;
-  height: 339px;
-  color: #fff;
-  text-align: center;
-  background: url(../images/restuarant-bg.jpg) center center / cover;
-  padding: 100px;
-}
-
-.first-h1{
-  color: orange;
-}

@@ -19,7 +19,7 @@
   margin-left: 38rem;
   margin-top: -275px;
   object-fit: cover;
-  background: url(../images/pexels-life-of-pix-67468.jpg) center center / cover;
+  background: url('../images/pexels-life-of-pix-67468.jpg')center center / cover;
   border-radius: 15px;
 }
 
@@ -29,7 +29,7 @@
   margin-left: 38rem;
   margin-top: -275px;
   object-fit: cover;
-  background: url(../images/pexels-mateusz-dach-99805-3660229.jpg) center center / cover;
+  background: url('../images/pexels-mateusz-dach-99805-3660229.jpg')center center / cover;
   border-radius: 15px;
 }
 .item > h1{
