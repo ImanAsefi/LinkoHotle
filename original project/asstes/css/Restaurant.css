@@ -1,56 +1,61 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     margin: 0;
     direction: rtl;
 }
-.div-title{
-  width: 75rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 25px;
-  border-radius: 15px;
-  height: 339px;
-  color: #fff;
-  text-align: center;
-  background: url(../images/restuarant-bg.jpg) center center / cover;
-  padding: 100px;
+
+.div-title {
+    width: 75rem;
+    justify-self: center;
+    border-radius: 15px;
+    height: 339px;
+    color: #fff;
+    text-align: center;
+    background: url(../images/restuarant-bg.jpg) center center / cover;
+    padding: 100px;
 }
-.first-h1{
-  color: orange;
+
+.first-h1 {
+    color: orange;
 }
-.box-content{
+
+.box-content {
     width: 75rem;
     display: flex;
     justify-content: space-evenly;
     justify-self: center;
-    margin:2.1rem ;
+    margin-left: 50px;
 }
+
 .box-content__right,
-.box-content__left
-{
+.box-content__left {
     width: 35.8rem;
     height: auto;
     text-align: center;
-    margin: 2rem;
+    margin: 25px 1.7rem;
     border-radius: 15px;
     border: 3px solid rgba(255, 166, 0, 0.836);
     background-color: #333;
 }
-.box-sub{
+
+.box-sub {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.box-sub>h2{
+
+.box-sub>h2 {
     padding: 5px;
     color: orange;
 }
-.btn-box{
+
+.btn-box {
     display: block;
     width: 165px;
     height: 55px;
@@ -64,23 +69,28 @@ body{
     text-align: center;
     justify-items: center;
 }
-.icon-box{
+
+.icon-box {
     padding-top: 9px;
     padding-right: 10px;
     transition-duration: 0.7s;
 }
-.btn-box:hover .icon-box{
+
+.btn-box:hover .icon-box {
     padding-right: 0px;
 }
-.btn-box:hover{
+
+.btn-box:hover {
     background-color: orange;
     box-shadow: 5px 4px 15px rgba(255, 166, 0, 0.76);
 }
-.box-sub>p{
-    padding:20px 10px;
+
+.box-sub>p {
+    padding: 20px 10px;
     color: #cdcdcf;
 }
-.img-box{
+
+.img-box {
     width: 565px;
     height: 373px;
     border-top-right-radius: 15px;
