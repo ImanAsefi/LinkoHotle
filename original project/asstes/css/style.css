@@ -117,8 +117,9 @@ a {
 }
 .event-box__content {
   display: flex;
-  justify-content: space-evenly;
-  margin: 8px auto;
+  justify-content: center;
+  margin: 8px ;
+  gap: 1.3rem;
 }
 .event-box__item {
   background-color: #333;
@@ -128,10 +129,10 @@ a {
   justify-content: center;
   align-items: center;
   padding: 15px 10px;
-  margin: 5px;
   border: 2px solid orange;
   border-radius: 15px;
   box-shadow: 15px 12px 30px #00000063;
+  width: 388px;
 }
 .event-box__item > h3 {
   color: #fff;
@@ -145,7 +146,7 @@ a {
   margin: 8px 0;
 }
 .event-box__image {
-  width: 345px;
+  width: 100%;
   border-radius: 15px;
   margin: 0 5px;
 }
@@ -205,14 +206,8 @@ a {
   margin: 40px auto;
   box-shadow: 15px 12px 30px #00000063;
 }
-.contact-us > h2{
-  text-align: center;
-}
 .title-form{
   color: orange;
-}
-.paragraph-form{
-  text-align: center;
 }
 .contact-us {
   padding: 1rem;
