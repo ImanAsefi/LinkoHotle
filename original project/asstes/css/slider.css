@@ -51,20 +51,37 @@
   margin-top: 25px;
   margin-bottom: 25px;
   width: 75rem;
-  height: 480px;
+  height: 400px;
   position: absolute;
   box-shadow: 15px 12px 30px #00000063;
+  background-color: #333;
+  color: #fff;
 }
-.swiper-slide {
+.swiper-slide {   
   display: flex;
   align-items: center;
   justify-content: center;
   object-fit: cover;
 }
 .swiper-slide > img {
-  width: 100%;
-  height: 100%;
+  margin-top: 55px;
+  margin-right: 100px;
+  width: 374px;
+  height: 290px;
   object-fit: cover;
+  border-radius: 15px;
+}
+.swiper-slide > h1{
+  color: orange;
+  margin-right: 740px;
+  margin-top: -300px;
+}
+.swiper-slide > p{
+  max-width: 540px;
+  margin-right: 560px;
+  line-height: 30px;
+  margin-top: 10px;
+  text-align: center;
 }
 .swiper-pagination-bullet {
   background: white;
