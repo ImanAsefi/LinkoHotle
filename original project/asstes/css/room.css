@@ -19,7 +19,7 @@ a {
   background-color: #333333e0;
   border-radius: 15px;
   width: 75rem;
-  /* box-shadow: 15px 12px 30px #00000063; */
+  box-shadow: 15px 12px 30px #00000063;
   border: 3px solid rgba(255, 166, 0, 0.836);
 }
 .content-subject > h2 {
@@ -54,9 +54,9 @@ a {
   gap: 1rem;
 }
 .item-box > img {
-  width: 100%;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  width: 384px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .item-box > h2 {
   color: orange;
