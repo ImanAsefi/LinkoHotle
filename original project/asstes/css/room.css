@@ -66,6 +66,7 @@ a {
   color: #a7a7a7;
   padding: 10px;
 }
+<<<<<<< HEAD
 
 .swiper{
   border-radius: 15px;
@@ -107,4 +108,40 @@ a {
 .swiper-pagination-bullet {
   background: white;
   opacity: 0.8;
+=======
+.content-advantage{
+  width: 75rem;
+  margin: 3rem auto;
+}
+.top-item,
+.bottom-item{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem;
+} 
+.top-item{
+  border-bottom: 2px solid orange;
+  padding-bottom: 20px;
+}
+.item-advantage{
+  height: 260px;
+  width: 390px;
+  margin: 0.5rem;
+  padding: 25px;
+  text-align: center;
+  border-left: 2px solid orange;
+}
+.border-none{
+  border: none;
+}
+.item-advantage > p{
+  color: #333;
+}
+.item-advantage > h2{
+  color: #000;
+}
+.icon-advantage{
+  font-size: 50px;
+  color: orange;
+>>>>>>> 30b47108688d35f32490419d8bce8a3ca91c756f
 }
