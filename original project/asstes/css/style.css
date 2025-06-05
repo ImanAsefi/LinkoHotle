@@ -23,7 +23,7 @@ a {
   position: relative;
   vertical-align: middle;
   margin: 0 10px;
-  width: 30%;
+  width: 40%;
 }
 
 .branchs {
@@ -89,10 +89,12 @@ a {
 }
 .image-gallery__top,
 .image-gallery__bottom {
+  width: 75rem;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin: 20px;
+  margin: 40px auto;
+  gap: 1.8rem;
 }
 .image-gallery__top > img,
 .image-gallery__bottom > img {
@@ -227,7 +229,6 @@ a {
   margin-bottom: 5px;
 }
 input::placeholder,
-input[button],
 textarea {
   font-family: "IRANSANS";
 }
@@ -240,6 +241,7 @@ textarea {
 }
 .btn {
   background-color: orange;
+  font-family: "IRANSANS";
 }
 .btn:hover {
   transition: 0.7s;
