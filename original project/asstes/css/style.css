@@ -272,11 +272,13 @@ textarea {
   padding: 0.5rem;
   border-radius: 10px;
 }
-.btn-form{
-  width: 160px;   
+
+.btn-form {
+  width: 160px;
   margin: 5px auto;
 }
-.btn {  
+
+.btn {
   margin-top: 20px;
   width: 160px;
   height: 50px;
@@ -306,4 +308,49 @@ iframe {
 
 .text-primary {
   color: orange;
+}
+
+.container-comments {
+  background-color: #333;
+  width: 75rem;
+  border-radius: 15px;
+  margin: 15px auto 25px auto;
+  color: #fff;
+  text-align: center;
+  border: 3px solid orange;
+}
+
+.p-title {
+  color: #cdcdcf;
+}
+
+.comments-title {
+  color: orange;
+}
+
+.content-comment {
+  margin: 15px auto;
+}
+
+.content-comment>.swiper {
+  border-radius: 15px;
+  margin-top: none;
+  margin-bottom: 30px;
+  width: 50rem;
+  height: 80px;
+  box-shadow: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  padding-bottom: 100px;
+}
+
+.swiper-slide {
+  justify-content: center;
+}
+
+.paragraph-comment {
+  max-width: 500px;
+  margin: 0 auto;
 }
