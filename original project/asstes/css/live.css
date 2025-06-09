@@ -1,0 +1,35 @@
+.counter-box {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px auto;
+    width: 75rem;
+    background: #333;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 15px 12px 20px #00000063;
+    border: 3px solid orange;
+}
+.counter-top{
+    border: 3px solid orange;
+    border-top:none;
+    border-bottom:none;
+    padding:0 50px;
+}
+.counter-top,
+.counter-right,
+.counter-left
+{
+    width: 25rem;
+}
+.title {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #a7a7a7;
+}
+.count {
+    font-size: 45px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    color: orange;
+}

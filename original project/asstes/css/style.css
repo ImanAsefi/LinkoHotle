@@ -35,7 +35,7 @@ a {
   justify-self: center;
   border-radius: 15px;
   background: url("../images/pexels-deeanacreates-2565222.jpg") no-repeat center center/cover;
-  margin: 15px auto 25px auto;
+  margin: 30px auto 25px auto;
 }
 
 .background-div {
@@ -106,7 +106,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin: 40px auto;
+  margin: 25px auto;
   gap: 1.8rem;
 }
 
