@@ -147,8 +147,9 @@ body {
 }
 .item-coffe__shop{
     background-color: #333;
-    width: 380px;
+    width: 386px;
     border-radius: 15px;
+    border: 3px solid orange; 
 }
 .item-coffe__shop > h2{
     color: orange;
