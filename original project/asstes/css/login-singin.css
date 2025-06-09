@@ -12,6 +12,10 @@ body{
   margin: 0;
   padding: 0;
 }
+button > a{
+    text-decoration: none;
+    color: #fff;
+}
 input , button{
     border:none ;
     font-family: inherit;

@@ -9,7 +9,7 @@ body {
     direction: rtl;
 }
 
-.div-title {
+.div-title{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,10 +20,9 @@ body {
     height: 339px;
     color: #fff;
     text-align: center;
+    padding: 100px; 
     background: url(../images/restuarant-bg.jpg) center center / cover;
-    padding: 100px;
 }
-
 .first-h1 {
     color: orange;
 }
@@ -110,4 +109,53 @@ body {
     height: 373px;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
+}
+.div-coffe__shop{
+    background: url('../images/pexels-chevanon-302899.jpg') center center/cover;
+    width: 75rem;
+    height: 500px;
+    margin:15px auto 0 auto ;
+    border-radius: 1rem;
+    display:flex;
+}
+.div-coffe__shop>.div-coffe__container{
+    border-radius: 1rem;
+    width: 75rem;
+    height: 500px;
+    background-image: linear-gradient(90deg , #000000da, #00000090);
+}
+.div-coffe__content{
+    margin-top: 10rem;
+    text-align: center;
+}
+.div-coffe__content> p,h2{
+    color: #fff;
+}
+.content-coffe__shop{
+    width: 75rem;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1.2rem;
+    margin: 25px auto;
+}
+.image-coffe__shop{
+    width: 380px;
+    height: 263px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.item-coffe__shop{
+    background-color: #333;
+    width: 380px;
+    border-radius: 15px;
+}
+.item-coffe__shop > h2{
+    color: orange;
+    text-align: center;
+    padding: 10px;
+}
+.item-coffe__shop > p{
+    color: #cdcdcf;
+    text-align: center;
+    padding: 7px 15px;
 }
