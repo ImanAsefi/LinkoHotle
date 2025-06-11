@@ -1,3 +1,4 @@
+/* start room styles */
 * {
   margin: 0;
   padding: 0;
@@ -13,59 +14,7 @@ ul {
 a {
   text-decoration: none;
 }
-.content-subject {
-  text-align: center;
-  margin: 40px auto 25px auto;
-  background-color: #333333e0;
-  border-radius: 15px;
-  width: 75rem;
-  box-shadow: 15px 12px 30px #00000063;
-  border: 3px solid rgba(255, 166, 0, 0.836);
-}
-.content-subject > h2 {
-  color: orange;
-  padding: 15px;
-}
-.paragraph-subject {
-  display: flex;
-  justify-content: space-evenly;
-  color: #a7a7a7;
-}
-.paragraph-subject > p {
-  padding: 15px;
-}
-
-.item-box {
-  background-color: #333;
-  text-align: center;
-  margin: 0;
-  border-radius: 15px;
-  height: 480px;
-  width: 390px;
-  box-shadow: 15px 12px 20px #00000063;
-  border: 3px solid rgba(255, 166, 0, 0.836);
-}
-.box-item__top,
-.box-item__bottom {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 25px;
-  gap: 1rem;
-}
-.item-box > img {
-  width: 384px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-.item-box > h2 {
-  color: orange;
-  padding: 5px;
-}
-.item-box > p {
-  color: #a7a7a7;
-  padding: 10px;
-}
+/* start Explaining slider */
 .swiper{
   border-radius: 15px;
   margin-top: 25px;
@@ -107,6 +56,64 @@ a {
   background: white;
   opacity: 0.8;
 }
+/* finish Explaining slider */
+/* start first-subject styles */
+.content-subject {
+  text-align: center;
+  margin: 40px auto 25px auto;
+  background-color: #333333e0;
+  border-radius: 15px;
+  width: 75rem;
+  box-shadow: 15px 12px 30px #00000063;
+  border: 3px solid rgba(255, 166, 0, 0.836);
+}
+.content-subject > h2 {
+  color: orange;
+  padding: 15px;
+}
+.paragraph-subject {
+  display: flex;
+  justify-content: space-evenly;
+  color: #a7a7a7;
+}
+.paragraph-subject > p {
+  padding: 15px;
+}
+/* finish first-subject styles */
+/* start room box styles */
+.item-box {
+  background-color: #333;
+  text-align: center;
+  margin: 0;
+  border-radius: 15px;
+  height: 480px;
+  width: 390px;
+  box-shadow: 15px 12px 20px #00000063;
+  border: 3px solid rgba(255, 166, 0, 0.836);
+}
+.box-item__top,
+.box-item__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px;
+  gap: 1rem;
+}
+.item-box > img {
+  width: 384px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.item-box > h2 {
+  color: orange;
+  padding: 5px;
+}
+.item-box > p {
+  color: #a7a7a7;
+  padding: 10px;
+}
+/* finish room box styles */
+/* start advantage item */
 .content-advantage{
   width: 75rem;
   margin: 3rem auto;
@@ -142,3 +149,4 @@ a {
   font-size: 50px;
   color: orange;
 }
+/* finish advantage item */                                                                                                                                            
