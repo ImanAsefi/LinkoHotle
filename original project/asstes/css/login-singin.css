@@ -16,6 +16,7 @@ button > a{
     text-decoration: none;
     color: #fff;
 }
+/* start log-in styles */
 input , button{
     border:none ;
     font-family: inherit;
@@ -115,8 +116,8 @@ input , button{
     background-color: orange;
     box-shadow: 5px 4px 15px rgba(255, 166, 0, 0.575);
 }
-
-/*                       Sign-in styles                              */
+/* finish log-in styles */
+/* start sign-in styles */
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -185,3 +186,4 @@ input , button{
     background-color: orange;
     box-shadow: 5px 4px 15px rgba(255, 166, 0, 0.575);
 }
+/* start sign-in styles */

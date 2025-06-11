@@ -1,3 +1,4 @@
+/* start live styles */
 .counter-box {
     display: flex;
     justify-content: space-evenly;
@@ -33,3 +34,4 @@
     transition: all 0.5s ease;
     color: orange;
 }
+/* finish live styles */

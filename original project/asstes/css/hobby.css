@@ -13,6 +13,7 @@ ul{
 a{
   text-decoration: none;
 }
+/* start styles header title */
 .header{
     background: url('../images/pexels-matthardy-2109740.jpg')no-repeat center center/cover;
     width: 75rem;
@@ -66,7 +67,8 @@ a{
     background-color: orange;
     box-shadow: 5px 4px 15px rgba(255, 166, 0, 0.575);
 }
-
+/* finish styles header title */
+/* start styles Explaining the pool and gym  */
 .description-pool-gym{
     width: 75rem;
     margin:2rem auto 0 auto ;
@@ -147,6 +149,8 @@ a{
     line-height: 2;
     padding: 10px 20px;
 }
+/* finish styles Explaining the pool and gym  */
+/* start styles Explaining the gamenet item  */
 .gamenet{
     width: 73rem;
     margin:2rem auto 2rem auto ;
@@ -214,3 +218,4 @@ a{
     border-bottom-left-radius: 45px;
     position: absolute;
 }
+/* finish styles Explaining the gamenet item  */

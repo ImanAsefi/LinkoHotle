@@ -8,7 +8,7 @@ body {
     margin: 0;
     direction: rtl;
 }
-
+/* start styles title for restaurant box  */
 .div-title{
     display: flex;
     flex-direction: column;
@@ -27,7 +27,8 @@ body {
 .first-h1 {
     color: orange;
 }
-
+/* finish styles title for restaurant box  */
+/* start styles box for restaurant  */
 .box-content {
     width: 75.5rem;
     display: flex;
@@ -85,16 +86,6 @@ body {
     justify-items: center;
 }
 
-.icon-box {
-    padding-top: 9px;
-    padding-right: 10px;
-    transition-duration: 0.7s;
-}
-
-.btn-box:hover .icon-box {
-    padding-right: 0px;
-}
-
 .btn-box:hover {
     background-color: orange;
     box-shadow: 5px 4px 15px rgba(255, 166, 0, 0.76);
@@ -111,6 +102,8 @@ body {
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
 }
+/* finish styles box for restaurant  */
+/* start styles title for coffe-shop box  */
 .div-coffe__shop{
     background: url('../images/pexels-chevanon-302899.jpg') center center/cover;
     width: 75rem;
@@ -132,6 +125,8 @@ body {
 .div-coffe__content> p,h2{
     color: #fff;
 }
+/* finish styles title for coffe-shop box  */
+/* start styles box for coffe-shop  */
 .content-coffe__shop{
     width: 75rem;
     display: flex;
@@ -161,3 +156,4 @@ body {
     text-align: center;
     padding: 7px 15px;
 }
+/* finish styles box for coffe-shop  */
