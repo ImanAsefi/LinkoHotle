@@ -4,18 +4,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "IRANSANS";
   height: 100%;
 }
+
 ul {
   list-style: none;
 }
+
 a {
   text-decoration: none;
 }
+
 /* start Explaining slider */
-.swiper{
+.swiper {
   border-radius: 15px;
   margin-top: 25px;
   margin-bottom: 25px;
@@ -26,13 +30,15 @@ a {
   background-color: #333;
   color: #fff;
 }
-.swiper-slide {   
+
+.swiper-slide {
   display: flex;
   align-items: center;
   justify-content: center;
   object-fit: cover;
 }
-.swiper-slide > img {
+
+.swiper-slide>img {
   margin-top: 55px;
   margin-right: 100px;
   width: 374px;
@@ -40,22 +46,26 @@ a {
   object-fit: cover;
   border-radius: 15px;
 }
-.swiper-slide > h1{
+
+.swiper-slide>h1 {
   color: orange;
   margin-right: 740px;
   margin-top: -300px;
 }
-.swiper-slide > p{
+
+.swiper-slide>p {
   max-width: 540px;
   margin-right: 560px;
   line-height: 30px;
   margin-top: 10px;
   text-align: center;
 }
+
 .swiper-pagination-bullet {
   background: white;
   opacity: 0.8;
 }
+
 /* finish Explaining slider */
 /* start first-subject styles */
 .content-subject {
@@ -67,18 +77,22 @@ a {
   box-shadow: 15px 12px 30px #00000063;
   border: 3px solid rgba(255, 166, 0, 0.836);
 }
-.content-subject > h2 {
+
+.content-subject>h2 {
   color: orange;
   padding: 15px;
 }
+
 .paragraph-subject {
   display: flex;
   justify-content: space-evenly;
   color: #a7a7a7;
 }
-.paragraph-subject > p {
+
+.paragraph-subject>p {
   padding: 15px;
 }
+
 /* finish first-subject styles */
 /* start room box styles */
 .item-box {
@@ -91,6 +105,7 @@ a {
   box-shadow: 15px 12px 20px #00000063;
   border: 3px solid rgba(255, 166, 0, 0.836);
 }
+
 .box-item__top,
 .box-item__bottom {
   display: flex;
@@ -99,36 +114,43 @@ a {
   margin: 25px;
   gap: 1rem;
 }
-.item-box > img {
+
+.item-box>img {
   width: 384px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-.item-box > h2 {
+
+.item-box>h2 {
   color: orange;
   padding: 5px;
 }
-.item-box > p {
+
+.item-box>p {
   color: #a7a7a7;
   padding: 10px;
 }
+
 /* finish room box styles */
 /* start advantage item */
-.content-advantage{
+.content-advantage {
   width: 75rem;
   margin: 3rem auto;
 }
+
 .top-item,
-.bottom-item{
+.bottom-item {
   display: flex;
   justify-content: space-evenly;
   margin: 1rem;
-} 
-.top-item{
+}
+
+.top-item {
   border-bottom: 2px solid orange;
   padding-bottom: 20px;
 }
-.item-advantage{
+
+.item-advantage {
   height: 260px;
   width: 390px;
   margin: 0.5rem;
@@ -136,17 +158,233 @@ a {
   text-align: center;
   border-left: 2px solid orange;
 }
-.border-none{
+
+.border-none {
   border: none;
 }
-.item-advantage > p{
+
+.item-advantage>p {
   color: #333;
 }
-.item-advantage > h2{
+
+.item-advantage>h2 {
   color: #000;
 }
-.icon-advantage{
+
+.icon-advantage {
   font-size: 50px;
   color: orange;
 }
-/* finish advantage item */                                                                                                                                            
+
+/* finish advantage item */
+@media screen and (max-width: 480px) {
+  .swiper {
+    width: 100%;
+    height: auto;
+    position: static;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .swiper-slide {
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .swiper-slide>img {
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+  }
+
+  .swiper-slide>h1 {
+    margin: 1rem 0 0 0;
+    font-size: 1.2rem;
+  }
+
+  .swiper-slide>p {
+    margin: 0.5rem auto;
+    max-width: 100%;
+    padding: 0 1rem;
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+
+  .content-subject {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .paragraph-subject {
+    flex-direction: column;
+  }
+
+  .paragraph-subject>p {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .box-item__top,
+  .box-item__bottom {
+    flex-direction: column;
+    margin: 0;
+    gap: 1rem;
+  }
+
+  .item-box {
+    width: 90%;
+    height: auto;
+    margin: 1rem auto;
+  }
+
+  .item-box>img {
+    width: 100%;
+    height: auto;
+  }
+
+  .content-advantage {
+    width: 95%;
+  }
+
+  .top-item,
+  .bottom-item {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+  }
+  .top-item{
+    border-bottom: none;
+  }
+  .item-advantage {
+    width: 100%;
+    height: auto;
+    border-left: none;
+    border-bottom: 1px solid orange;
+    padding: 1rem;
+  }
+
+  .footer .container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footer .content-footer {
+    flex-direction: column;
+  }
+
+  .footer .item-footer {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-last-item {
+    font-size: 0.85rem;
+    text-align: center;
+    padding: 1rem;
+  }
+  .after::before
+  .after::after{
+    background-color: none;
+    display: none;
+    margin: 0 ;
+    width: 0;
+  }
+
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .swiper {
+    width: 95%;
+    height: auto;
+    margin: 20px auto;
+  }
+
+  .swiper-slide {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .swiper-slide > img {
+    width: 80%;
+    height: auto;
+    text-align: center;
+  }
+
+  .swiper-slide > h1 {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    display: block;
+    text-align: center;
+    width: 80%;
+    margin: 1rem auto 0 auto;
+  }
+
+  .swiper-slide > p {
+    font-size: 1rem;
+    max-width: 90%;
+    /* text-align: justify; */
+    margin: 0 auto 0 auto;
+    display: block;
+    text-align: center;
+    width: 80%;
+  }
+
+  .content-subject {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .paragraph-subject {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .paragraph-subject > p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .box-item__top,
+  .box-item__bottom {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .item-box {
+    width: 45%;
+    height: auto;
+  }
+  
+  .item-box > img {
+    width: 100%;
+  }
+
+  .border-left-none{
+    border: none;
+  }
+
+  .content-advantage {
+    width: 90%;
+    margin: 2rem auto;
+  }
+
+  .top-item,
+  .bottom-item {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .item-advantage {
+    width: 45%;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .after::after,
+  .after::before{
+    width: 30%;
+  }
+}

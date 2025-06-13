@@ -4,122 +4,245 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
+
+body {
   font-family: "IRANSANS";
   height: 100%;
 }
-ul{
+
+ul {
   list-style: none;
   direction: rtl;
 }
-a{
+
+a {
   text-decoration: none;
 }
-nav{
-    margin-top: 25px;
-    margin-right: auto;
-    margin-left: auto;
+
+nav {
+  margin-top: 25px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 75rem;
+  height: 5rem;
+  justify-self: center;
+  border-radius: 15px;
+  background-color: #333;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  top: 18px;
+  z-index: 1;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+.name-hotel{
+  display:flex ;
+}
+.name-hotel>.h1-nav {
+  font-size: 30px;
+  color: #fff;
+  margin-left: 10px;
+  margin-top: 16px;
+}
+
+.icon-nav {
+  font-size: 30px;
+  margin-top: 25px;
+  color: orange;
+}
+
+.menu>li:hover>a:hover {
+  margin-bottom: 10px;
+  margin-left: 5px;
+  display: block;
+  transition: 0.4s;
+}
+
+.menu>li>a {
+  color: #fff;
+  padding: 0.4rem;
+  font-size: 17px;
+  margin: 0.5rem;
+  text-decoration: none;
+  transition: 0.4s;
+  border-radius: 3px;
+}
+
+.menu>li>a:hover {
+  background-color: orange;
+  border-radius: 10px;
+  transition: 1.2s;
+  box-shadow: 5px 4px 15px rgba(255, 166, 0, 0.575);
+}
+
+.main-header__dropdown {
+  position: absolute;
+  top: 4rem;
+  transition: all 200ms ease-in-out;
+  background-color: #333333e4;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  width: 8rem;
+  z-index: 99;
+  padding: 1rem 0;
+  border-bottom: 4px solid var(--primary-color);
+  opacity: 0;
+  visibility: hidden;
+  transition-duration: 0.5s;
+  border: 2px solid orange;
+  height: 90px;
+  flex-wrap: nowrap;
+  text-align: center;
+}
+
+.main-header__item:hover .main-header__dropdown {
+  opacity: 1;
+  visibility: visible;
+  top: 6.5rem;
+}
+
+.main-header__dropdown-link {
+  display: block;
+  padding: 0.6rem 2rem;
+  color: #fff;
+  transition: all 400ms ease;
+  text-decoration: none;
+}
+
+.main-header__dropdown-item {
+  border-bottom: 2px solid orange;
+  margin-top: -15px;
+  height: 80%;
+  transition-duration: 0.7s;
+}
+
+.main-header__dropdown-item:hover {
+  background-color: #252525f9;
+}
+
+.no-hover:hover>a {
+  background-color: orange;
+  border-radius: 10px;
+  transition: 1.2s;
+  box-shadow: 5px 4px 15px rgba(255, 166, 0, 0.575);
+}
+
+.second-child {
+  border-bottom: none;
+  margin-top: 0px;
+  height: 79%;
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    flex-direction: column; /* تغییر از row به column */
+    width: 90%;
+    height: auto; /* ارتفاع خودکار */
+    padding: 0.8rem 1rem;
+    border-radius: 0;
+    align-items: center;
+  }
+
+  /* استایل جدید برای بخش عنوان و آیکون */
+  .nav-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .name-hotel>.h1-nav{
+    padding-left: 5px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.3rem;
+    margin-top: 1rem;
+  }
+
+  .menu>li>a {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.6rem;
+    margin: 0;
+  }
+
+  .main-header__dropdown {
+    margin-top: 5.5rem; 
+    position: absolute;
+    width: 6.4rem;
+  }
+  .main-header__dropdown-link{
+    font-size: 0.7rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  nav {
+    width: 95%;
+    height: auto;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .name-hotel {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 0.5rem auto;
+  }
+
+  .icon-nav {
+    font-size: 28px;
+    margin-top: 5px;
+    margin-right: 8px;
+  }
+
+  .name-hotel > .h1-nav {
+    font-size: 1.4rem;
+    margin-top: 8px;
+  }
+
+  .menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .menu > li > a {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 0.3rem;
+  }
+
+  .main-header__dropdown {
+    width: 7rem;
+    font-size: 0.9rem;
+  }
+
+  .main-header__dropdown-link {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  nav {
     width: 75rem;
     height: 5rem;
-    justify-self: center;
-    border-radius: 15px;
-    background-color: #333;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    top: 18px;
-    z-index: 1;
-}
-.menu {
-    display: flex;
+    flex-direction: row;
     align-items: center;
+    padding: 0 3rem;
+  }
 }
-#nav > .h1-nav{
-    font-size: 30px;
-    color: #fff;
-    margin-left: 30px;
-    margin-top: 16px;
-}
-.icon-nav{
-    font-size: 30px;
-    margin-top: 25px;
-    margin-left: -340px;
-    color: orange;
-}
-.menu > li:hover > a:hover{
-    margin-bottom: 10px;
-    margin-left: 5px;
-    display: block;
-    transition: 0.4s;
-}
-.menu > li > a {
-    color: #fff;
-    padding: 0.4rem;
-    font-size: 17px;
-    margin: 0.5rem;
-    text-decoration: none;
-    transition: 0.4s;
-    border-radius: 3px;
-}
-.menu > li > a:hover {
-    background-color: orange;
-    border-radius: 10px;
-    transition: 1.2s;
-    box-shadow: 5px 4px 15px rgba(255, 166, 0, 0.575);
-}
-.main-header__dropdown{
-    position: absolute;
-    top: 4rem; 
-    transition: all 200ms ease-in-out;
-    background-color: #333333e4;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.12);
-    border-radius: 5px;
-    width: 8rem;
-    z-index: 99;
-    padding: 1rem 0;
-    border-bottom: 4px solid var(--primary-color);
-    opacity: 0;
-    visibility: hidden;
-    transition-duration: 0.5s;
-    border: 2px solid orange;
-    height: 90px;
-    flex-wrap: nowrap;
-    text-align: center;
-}
-.main-header__item:hover .main-header__dropdown{
-    opacity: 1;
-    visibility: visible;
-    top: 6.5rem;
-}
-.main-header__dropdown-link{
-    display: block;
-    padding: 0.6rem 2rem;
-    color: #fff;
-    transition: all 400ms ease;
-    text-decoration: none;
-}
-.main-header__dropdown-item{
-    border-bottom: 2px solid orange;
-    margin-top: -15px;
-    height: 80%;
-    transition-duration: 0.7s;
-}
-.main-header__dropdown-item:hover{
-    background-color: #252525f9;
-}
-
-.no-hover:hover > a {
-    background-color: orange;
-    border-radius: 10px;
-    transition: 1.2s;
-    box-shadow: 5px 4px 15px rgba(255, 166, 0, 0.575);
-}
-
-.second-child{
-    border-bottom: none;
-    margin-top: 0px;
-    height: 79%;
-}
-/* finish Navbar styles */
