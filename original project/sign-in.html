@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="fa">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="asstes/images/edge-brands-solid.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/svg+xml" href="asstes/images/edge-brands.svg">
     <link rel="stylesheet" href="asstes/css/login-singin.css">
     <link rel="stylesheet" href="asstes/css/fonts.css">
     <link rel="stylesheet" href="asstes/SweetAlert/CSS/sweetalert2.min.css">
     <title>صفحه ورود | هتل لینکو</title>
 </head>
+
 <body>
     <!-- start wrapper signin -->
     <div class="wrapper signin">
@@ -23,19 +26,26 @@
             </div>
             <div class="form-input__wrapper">
                 <label for="password" class="form-label">رمز عبور :</label>
-                <input class="form-input" type="password" id="password"/>
+                <input class="form-input" type="password" id="password" />
             </div>
             <div class="go-login">
                 <p>آیا حساب کاربری ندارید؟</p>
                 <a href="./login.html">ایجاد حساب کاربری</a>
             </div>
             <div class="sign-in-btn__form">
-                <button type="submit"  class="form-btn">ورود</button>
+                <button type="submit" class="form-btn">ورود</button>
             </div>
         </form>
     </div>
     <script src="asstes/js/script.js"></script>
     <script src="asstes/SweetAlert/JS/sweetalert2.all.min.js"></script>
+    <script>
+        // تشخیص دستگاه موبایل و اعمال کلاس مربوطه
+        if (/Mobi|Android/i.test(navigator.userAgent)) {
+            document.body.classList.add('mobile-device');
+        }
+    </script>
     <!-- finish wrapper signin -->
 </body>
+
 </html>

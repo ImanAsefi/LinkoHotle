@@ -17,6 +17,36 @@ a {
   text-decoration: none;
 }
 
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: orange;
+  border-radius: 10px;
+  border: 2px solid #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ff9900;
+}
+
+/* برای Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: orange #f0f0f0;
+}
+
+/* برای IE/Edge قدیمی */
+body {
+  -ms-overflow-style: none;
+}
+
 /* start styles header title */
 .header {
   background: url('../images/pexels-matthardy-2109740.jpg')no-repeat center center/cover;
@@ -252,4 +282,256 @@ a {
   border-bottom-left-radius: 45px;
   position: absolute;
 }
+
 /* finish styles Explaining the gamenet item  */
+/* Responsive Styles */
+@media screen and (max-width:480px) {
+  .header {
+    height: 200px;
+    width: 95%;
+  }
+
+  .header>.container {
+    width: 100%;
+  }
+
+  .paragraph-header {
+    text-align: center;
+  }
+
+  .content-pool,
+  .content-gym {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 900px;
+    border-radius: 15px;
+  }
+
+  .title-des::after,
+  .title-des::before {
+    width: 0;
+    display: none;
+  }
+
+  .des-pool,
+  .des-gym {
+    display: block;
+    min-width: 30px;
+  }
+
+  .description-pool-gym {
+    width: 90%;
+    height: auto;
+    display: block;
+  }
+
+  .sliders-pool {
+    width: 90%;
+    display: block;
+    margin: 10px auto;
+  }
+
+  .sliders-pool>.swiper {
+    border-radius: 15px !important;
+    width: 90%;
+  }
+
+  .sliders-pool>.swiper>.swiper-button-next {
+    display: none;
+    width: 0;
+  }
+
+  .sliders-pool>.swiper>.swiper-button-prev {
+    display: none;
+    width: 0;
+  }
+
+  .img-gym {
+    width: 90%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+
+  .list-time__gamenet {
+    margin: 2px auto;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  .gamenet {
+    width: 300px;
+  }
+
+  .gamenet-contant {
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+  }
+
+  .gamenet-content__right,
+  .gamenet-content__left {
+    width: 300px;
+    padding: 1rem;
+  }
+
+  .gamenet-content__left {
+    order: 2;
+    /* تصویر به پایین منتقل می‌شود */
+    padding-top: 1rem;
+  }
+
+  .gamenet-content__right {
+    order: 1;
+  }
+
+  .img-gamenet {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    border-radius: 10px;
+  }
+
+  .gamenet-content__left>.swiper {
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-radius: 10px !important;
+  }
+
+  .list-time__gamenet {
+    width: 100%;
+    overflow-x: auto;
+    /* برای جدول های عریض */
+  }
+
+  .title-gamenet {
+    font-size: 1.3rem;
+    padding: 10px;
+  }
+
+  .paragraph-gamenet {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    padding: 0 5px;
+  }
+
+  .container-gamenet {
+    width: 300px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .header {
+    height: 400px;
+    width: 90%;
+  }
+
+  .header>.container {
+    height: 400px;
+    width: 100%;
+  }
+
+  .title-header {
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .title-des {
+    width: 65%;
+    text-align: center;
+  }
+
+  .title-des::after,
+  .title-des::before {
+    width: 20%;
+  }
+
+  .des-pool,
+  .content-pool,
+  .des-gym,
+  .content-gym{
+    display: flex;
+    flex-direction: column;
+    width: 680px;
+    border-radius: 15px;
+  }
+  .img-slider-pool,
+  .img-gym{
+    border-radius: 15px;
+    margin: 10px auto;
+  }
+   .list-time__gamenet {
+    margin: 2px auto;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  .gamenet {
+    width: 680px;
+  }
+
+  .description-pool-gym{
+    width: 90%;
+  }
+
+  .gamenet-contant {
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+  }
+
+  .gamenet-content__right,
+  .gamenet-content__left {
+    width: 300px;
+    padding: 1rem;
+  }
+
+  .gamenet-content__left {
+    order: 2;
+    /* تصویر به پایین منتقل می‌شود */
+    padding-top: 1rem;
+  }
+
+  .gamenet-content__right {
+    order: 1;
+    /* محتوا به بالا منتقل می‌شود */
+  }
+
+  .img-gamenet {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    border-radius: 10px;
+  }
+
+  .gamenet-content__left>.swiper {
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-radius: 10px !important;
+  }
+
+  .list-time__gamenet {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .title-gamenet {
+    font-size: 1.3rem;
+    padding: 10px;
+  }
+
+  .paragraph-gamenet {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    padding: 0 5px;
+  }
+
+  .container-gamenet {
+    width: 75%;
+  }
+}
