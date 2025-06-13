@@ -249,8 +249,12 @@ document.querySelector('.form').addEventListener('submit', function (e) {
         text: "ثبت‌نام با موفقیت انجام شد!",
         confirmButtonText: "ادامه"
     }).then(() => {
+        if (result.isConfirmed) {
+            // Swal.fire("Saved!", "", "success");
+             checkCookie(); // ذخیره یا نمایش ایمیل در کوکی
         // بعد از تأیید پیام، انتقال به صفحه اصلی
-        window.location.href = 'index.html';
+            window.location.href = 'index.html';
+        }
     });
 });
 
@@ -320,3 +324,84 @@ document.querySelector('.form').addEventListener('submit', function (e) {
 });
 // شمارنده سوم: از 50 شروع، بین 50 تا 70 نوسان
 createFluctuatingCounter("counter3", 50, 50, 70);
+
+
+
+
+
+
+                    // Cookis
+
+
+
+
+
+// ذخیره کوکی
+    function setCookie(cName, cValue, cDays) {
+      let d = new Date();
+      d.setTime(d.getTime() + (cDays * 24 * 60 * 60 * 1000));
+      let expires = "expires=" + d.toUTCString();
+      document.cookie = cName + "=" + cValue + ";" + expires + ";path=/";
+    }
+
+    // گرفتن کوکی
+    function getCookie(cName) {
+      let name = cName + "=";
+      let decoded = decodeURIComponent(document.cookie);
+      let cookies = decoded.split(";");
+      for (let i = 0; i < cookies.length; i++) {
+        let c = cookies[i].trim();
+        if (c.indexOf(name) === 0) {
+          return c.substring(name.length);
+        }
+      }
+      return "";
+    }
+
+    // چک کردن کوکی
+    function checkCookie() {
+      let email = getCookie("userEmail");
+      if (email !== "") {
+        Swal.fire("خوش آمدید!", "ایمیل شما: " + email, "success");
+      }
+    }
+
+    // وقتی فرم ارسال میشه
+    document.querySelector('.form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const name = document.getElementById('name');
+      const email = document.getElementById('email');
+      const password = document.getElementById('password');
+
+      if (name.value.trim() === "") {
+        Swal.fire("خطا", "نام وارد نشده", "error");
+        return;
+      }
+
+      if (email.value.trim() === "" || !email.value.includes("@")) {
+        Swal.fire("خطا", "ایمیل معتبر وارد کن", "error");
+        return;
+      }
+
+      if (password.value.trim().length < 6) {
+        Swal.fire("خطا", "رمز عبور باید حداقل ۶ کاراکتر باشد", "error");
+        return;
+      }
+
+      // ذخیره کوکی
+      setCookie("Name", name.value.trim(), 10);
+
+      Swal.fire("موفق", "ثبت‌نام با موفقیت انجام شد", "success").then(() => {
+        // بعد از تأیید می‌تونی به صفحه‌ای منتقل بشی
+        // window.location.href = "index.html";
+        checkCookie();
+      });
+    });
+
+ 
+
+
+
+
+
+
