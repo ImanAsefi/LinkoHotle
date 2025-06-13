@@ -51,7 +51,7 @@ input , button{
     background-color: rgba(255,255,255 , 0.13);
     color: #fff;
     padding: 50px 35px 35px 35px;
-    border: 2px solid rgba(255, 166, 0, 0.589);
+    border: 2px solid orange;
     border-radius: 10px;
     box-sizing: 0 0 40px rgba(0,0,0,0.5);
     backdrop-filter: blur(10px);
@@ -108,13 +108,13 @@ input , button{
     padding: 9px 38px;
     display: block;
     cursor: pointer;
-    border: 2px solid rgba(255, 166, 0, 0.596);
+    border: 2px solid orange;
     transition-duration: 1s;
     margin-top: 10px;
 }
 .form-btn:hover{
     background-color: orange;
-    box-shadow: 5px 4px 15px rgba(255, 166, 0, 0.575);
+    box-shadow: 5px 4px 15px orange;
 }
 /* finish log-in styles */
 /* start sign-in styles */
@@ -178,7 +178,7 @@ input , button{
     padding: 9px 38px;
     display: block;
     cursor: pointer;
-    border: 2px solid rgba(255, 166, 0, 0.596);
+    border: 2px solid orange;
     transition-duration: 1s;
     margin-top: 25px;
 }

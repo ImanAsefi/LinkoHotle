@@ -1,88 +1,180 @@
 /* start footer styles */
-body{
+body {
     font-family: "IRANSANS";
     overflow-x: hidden;
 }
-.footer{
+
+.footer {
     background-color: #333;
     color: #fff;
-    padding: 1rem 3rem 1rem 3rem;
-    width: 100vw;
+    padding: 2rem 1rem;
+    width: 100%;
 }
-.content-footer{
-  display: flex;
-  justify-content: space-evenly;
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.title-footer{
+
+.content-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1.5rem;
+}
+
+.title-footer {
     text-align: center;
-    margin:1rem 0;
+    margin: 1rem 0;
 }
+
 .title-footer::after,
-.title-footer::before{
-  background-color: #a7a7a7a2;
-  content: "";
-  display: inline-block;
-  height: 1px;
-  position: relative;
-  vertical-align: middle;
-  margin: 0 10px;
-  width: 25%;
+.title-footer::before {
+    background-color: #a7a7a7;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    margin: 0 10px;
+    width: 25%;
 }
-.first-title-footer{
-    font-size: 40px;
+
+.first-title-footer {
+    font-size: 2rem;
     font-weight: bold;
     position: relative;
+    /* color: orange; */
 }
-.title-footer>p{
-    font-size: 10px;
-}
-.icons-footer{
-    display:flex ;
-    justify-content: space-evenly;
-}
-.footer-icon{
-    color: #fff;
-    font-size: 1.5rem;
-}
-.paragraph-footer{
-    color: orange;
-    font-size: 1.2rem;
-}
-.item-footer{
-    border-left: 1px solid #a7a7a7a2;
-    text-align: center;
-    padding:0 2.5rem;
-}
-.item4{
-    border-left: none;
-}
-.footer-last-item{
+
+.icons-footer {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 1rem 0;
-    border-top: 1px solid #a7a7a7a2;
-    padding-top: 25px;
+    gap: 1.5rem;
+    margin-top: 1rem;
 }
-.first-title-footer::after {
-    content: "";
-    position: absolute;
-    right: 137px;
-    width: 0.2rem;
-    height: 3.4rem;
-    border-radius: 3rem;
-    background-color: orange;
-    transform: rotate(8deg);
+
+.footer-icon {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
 }
+
+.footer-icon:hover {
+    color: orange;
+    transform: scale(1.2);
+}
+
+.paragraph-footer {
+    color: orange;
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.item-footer {
+    text-align: center;
+    padding: 1rem;
+    flex: 1 1 200px;
+    min-width: 200px;
+}
+
+.footer-last-item {
+    text-align: center;
+    margin: 1.5rem 0 0;
+    padding-top: 1.5rem;
+    border-top: 1px solid #a7a7a7;
+    font-size: 0.9rem;
+}
+
 .first-title-footer::before {
     content: "";
     position: absolute;
     right: 0;
-    top: 10px;
-    width: 130px;
-    max-width: 250px;
-    height: 60%;
-    background-color:rgba(255, 166, 0, 0.438);
+    top: 0;
+    width: 100%;
+    height: 80%;
+    background-color: rgba(255, 166, 0, 0.438);
 }
-/* start footer styles */
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .content-footer {
+        gap: 1rem;
+    }
+    
+    .item-footer {
+        flex: 1 1 180px;
+        padding: 0.8rem;
+    }
+    
+    .first-title-footer {
+        font-size: 1.8rem;
+    }
+    
+    .footer-icon {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 1.5rem 0.5rem;
+    }
+    
+    .content-footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    
+    .item-footer {
+        width: 80%;
+        border-left: none;
+        border-bottom: 1px solid #a7a7a7;
+        padding-bottom: 1.5rem;
+    }
+    
+    .item4 {
+        border-bottom: none;
+    }
+    
+    .title-footer::after,
+    .title-footer::before {
+        width: 20%;
+    }
+    
+    .first-title-footer {
+        font-size: 1.6rem;
+    }
+    
+    .first-title-footer::after {
+        height: 2.8rem;
+        right: 25%;
+    }
+}
+
+@media (max-width: 480px) {
+    .first-title-footer {
+        font-size: 1.4rem;
+    }
+    
+    .paragraph-footer {
+        font-size: 1rem;
+    }
+    
+    .item-footer {
+        width: 90%;
+    }
+    
+    .title-footer::after,
+    .title-footer::before {
+        width: 15%;
+    }
+    
+    .footer-last-item {
+        font-size: 0.8rem;
+        padding: 1rem 0.5rem 0;
+    }
+}
+/* finish footer styles */
+

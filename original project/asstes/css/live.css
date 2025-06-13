@@ -1,37 +1,103 @@
 /* start live styles */
 .counter-box {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 20px auto;
-    width: 75rem;
-    background: #333;
-    padding: 40px;
-    border-radius: 20px;
-    text-align: center;
-    box-shadow: 15px 12px 20px #00000063;
-    border: 3px solid orange;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px auto;
+  width: 95%;
+  max-width: 75rem;
+  background: #333;
+  padding: 30px 20px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 15px 12px 20px #00000063;
+  border: 3px solid orange;
 }
-.counter-top{
-    border: 3px solid orange;
-    border-top:none;
-    border-bottom:none;
-    padding:0 50px;
+
+.counter-top {
+  border: 3px solid orange;
+  border-top: none;
+  border-bottom: none;
+  padding: 0 20px;
 }
+
 .counter-top,
 .counter-right,
-.counter-left
-{
-    width: 25rem;
+.counter-left {
+  width: 100%;
+  padding: 15px 0;
 }
+
 .title {
-    font-size: 20px;
-    margin-bottom: 15px;
-    color: #a7a7a7;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #a7a7a7;
 }
+
 .count {
-    font-size: 45px;
-    font-weight: bold;
-    transition: all 0.5s ease;
-    color: orange;
+  font-size: 36px;
+  font-weight: bold;
+  transition: all 0.5s ease;
+  color: orange;
 }
 /* finish live styles */
+/* Responsive adjustments */
+@media screen and (max-width: 992px) {
+  .counter-box {
+    padding: 25px 15px;
+  }
+  
+  .title {
+    font-size: 16px;
+  }
+  
+  .count {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .counter-box {
+    flex-direction: column;
+    width: 90%;
+    padding: 20px 10px;
+  }
+  
+  .counter-top {
+    border: none;
+    border-top: 2px solid orange;
+    border-bottom: 3px solid orange;
+    padding: 20px 0;
+    margin: 10px 0;
+  }
+  
+  .counter-left {
+    border-bottom: none;
+  }
+  
+  .title {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+  
+  .count {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .counter-box {
+    border-radius: 15px;
+    padding: 15px 5px;
+    box-shadow: 8px 6px 15px #00000040;
+  }
+  
+  .title {
+    font-size: 14px;
+  }
+  
+  .count {
+    font-size: 24px;
+  }
+}

@@ -1,26 +1,94 @@
 /* start slider styles */
-.swiper{
+.swiper {
   border-radius: 15px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  width: 75rem;
-  height: 580px;
-  position: absolute;
+  margin: 25px auto;
+  width: 95%;
+  max-width: 75rem;
+  height: auto;
+  aspect-ratio: 16/9;
   box-shadow: 15px 12px 30px #00000063;
+  position: relative;
 }
-.swiper-slide {   
+
+.swiper-slide {
   display: flex;
   align-items: center;
   justify-content: center;
-  object-fit: cover;
 }
+
 .swiper-slide > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
+
 .swiper-pagination-bullet {
   background: white;
   opacity: 0.8;
+  width: 12px;
+  height: 12px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .swiper {
+    width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper {
+    border-radius: 10px;
+    margin: 15px auto;
+    box-shadow: 8px 6px 15px #00000040;
+  }
+  
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 30px;
+    height: 30px;
+    display: none; /* Hide arrows on mobile */
+  }
+  
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .swiper {
+    border-radius: 8px;
+    margin: 10px auto;
+    aspect-ratio: 4/3;
+    height: 300px;
+  }
+  
+  .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+  }
 }
 /* finish slider styles */

@@ -3,79 +3,93 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
+
+body {
   font-family: "IRANSANS";
   height: 100%;
 }
-ul{
+
+ul {
   list-style: none;
 }
-a{
+
+a {
   text-decoration: none;
 }
+
 /* start styles header title */
-.header{
-    background: url('../images/pexels-matthardy-2109740.jpg')no-repeat center center/cover;
-    width: 75rem;
-    height: 500px;
-    margin:2rem auto 0 auto ;
-    border-radius: 1rem;
+.header {
+  background: url('../images/pexels-matthardy-2109740.jpg')no-repeat center center/cover;
+  width: 75rem;
+  height: 500px;
+  margin: 2rem auto 0 auto;
+  border-radius: 1rem;
 }
-.header>.container{
-    border-radius: 1rem;
-    width: 75rem;
-    height: 500px;
-    background-image: linear-gradient(90deg , #000000da, #00000090);
+
+.header>.container {
+  border-radius: 1rem;
+  width: 75rem;
+  height: 500px;
+  background-image: linear-gradient(90deg, #000000da, #00000090);
 }
-.content-header{
-    display: flex;
-    flex-direction: column;    
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
+
+.content-header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
 }
-.title-header{
-    font-size: 2rem;
-    color: orange;
-    font-weight: bold;
-    margin-top: 10rem;
+
+.title-header {
+  font-size: 2rem;
+  color: orange;
+  font-weight: bold;
+  margin-top: 10rem;
 }
-.paragraph-header{
-    color: #fff;
-    margin: 0.5rem 0;
+
+.paragraph-header {
+  color: #fff;
+  margin: 0.5rem 0;
 }
-.btn-header{
-    width: 160px;
-    height: 50px;
-    margin-top: 20px;
-    padding-right: 50px;
-    color: #fff;
-    border: 1px solid orange;
-    padding: 10px 25px;
-    transition-duration: 0.7s;
-    border-radius: 5px;
+
+.btn-header {
+  width: 160px;
+  height: 50px;
+  margin-top: 20px;
+  padding-right: 50px;
+  color: #fff;
+  border: 1px solid orange;
+  padding: 10px 25px;
+  transition-duration: 0.7s;
+  border-radius: 5px;
 }
-.icon-header{
-    padding-top: 6px;
-    padding-right: 10px;
-    transition-duration: 0.7s;
+
+.icon-header {
+  padding-top: 6px;
+  padding-right: 10px;
+  transition-duration: 0.7s;
 }
-.btn-header:hover .icon-header{
-    padding-right: 0px;
+
+.btn-header:hover .icon-header {
+  padding-right: 0px;
 }
-.btn-header:hover{
-    background-color: orange;
-    box-shadow: 5px 4px 15px rgba(255, 166, 0, 0.575);
+
+.btn-header:hover {
+  background-color: orange;
+  box-shadow: 5px 4px 15px rgba(255, 166, 0, 0.575);
 }
+
 /* finish styles header title */
 /* start styles Explaining the pool and gym  */
-.description-pool-gym{
-    width: 75rem;
-    margin:2rem auto 0 auto ;
+.description-pool-gym {
+  width: 75rem;
+  margin: 2rem auto 0 auto;
 }
+
 .title-des::after,
-.title-des::before{
-  background-color: #a7a7a7a2;
+.title-des::before {
+  background-color: #a7a7a7;
   content: "";
   display: inline-block;
   height: 1px;
@@ -84,138 +98,158 @@ a{
   margin: 0 10px;
   width: 40%;
 }
-.title-des{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: orange;
-    font-size: 30px;
+
+.title-des {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: orange;
+  font-size: 30px;
 }
+
 .des-pool,
-.des-gym
-{
-    display: flex; 
-    justify-content: space-evenly;
-    margin: 1rem;
+.des-gym {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem;
 }
-.content-pool{
-    width: 1200px;
-    height: 450px;
-    background-color:  #333;
-    border-bottom-right-radius:1rem ;
-    border-top-right-radius:1rem ;
-    padding: 30px;
-    border: 3px solid rgba(255, 166, 0, 0.836);
-    border-left: none;
+
+.content-pool {
+  width: 1200px;
+  height: 450px;
+  background-color: #333;
+  border-bottom-right-radius: 1rem;
+  border-top-right-radius: 1rem;
+  padding: 30px;
+  border: 3px solid rgba(255, 166, 0, 0.836);
+  border-left: none;
 }
-.content-gym{
-    width: 1200px;
-    height: 450px;
-    background-color:  #333;
-    border-bottom-left-radius:1rem ;
-    border-top-left-radius:1rem ;
-    padding: 30px;
-    border: 3px solid rgba(255, 166, 0, 0.836);
-    border-right: none;
+
+.content-gym {
+  width: 1200px;
+  height: 450px;
+  background-color: #333;
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+  padding: 30px;
+  border: 3px solid orange;
+  border-right: none;
 }
-.img-slider-pool{
-    width: 570px;
-    height: 450px;
-    border-right: none;
+
+.img-slider-pool {
+  width: 570px;
+  height: 450px;
+  border-right: none;
 }
-.sliders-pool>.swiper{
-    width: 570px;
-    border-bottom-left-radius:2rem !important;
-    border-top-left-radius:1rem ;   
+
+.sliders-pool>.swiper {
+  width: 570px;
+  border-bottom-left-radius: 2rem !important;
+  border-top-left-radius: 1rem;
 }
-.img-gym{
-    width: 600px;
-    height: 450px; 
-    border-bottom-right-radius:1rem ;
-    border-top-right-radius:1rem ;
-    border-left: none;
+
+.img-gym {
+  width: 600px;
+  height: 450px;
+  border-bottom-right-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-left: none;
 }
+
 .pool-title,
-.gym-title{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: orange;
+.gym-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: orange;
 }
+
 .paragraph-pool,
-.paragraph-gym{
-    text-align: center;
-    color: #fff;
-    line-height: 2;
-    padding: 10px 20px;
+.paragraph-gym {
+  text-align: center;
+  color: #fff;
+  line-height: 2;
+  padding: 10px 20px;
 }
+
 /* finish styles Explaining the pool and gym  */
 /* start styles Explaining the gamenet item  */
-.gamenet{
-    width: 73rem;
-    margin:2rem auto 2rem auto ;
+.gamenet {
+  width: 73rem;
+  margin: 2rem auto 2rem auto;
 }
-.container-gamenet{
-   width: 73rem;
-   background-color: #333;
-   border-radius: 1rem;
-   border: 3px solid rgba(255, 166, 0, 0.836);
-   padding: 15px 0;
+
+.container-gamenet {
+  width: 73rem;
+  background-color: #333;
+  border-radius: 1rem;
+  border: 3px solid orange;
+  padding: 15px 0;
 }
-.gamenet-contant{
-    display: flex;
-    justify-content: space-evenly;
-    border-radius: 0;
+
+.gamenet-contant {
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 0;
 }
+
 .gamenet-content__right,
-.gamenet-content__left{
-    width: 37rem; 
-    padding: 2rem;
+.gamenet-content__left {
+  width: 37rem;
+  padding: 2rem;
 }
-.gamenet-content__left{
-    padding-top: 50px;
+
+.gamenet-content__left {
+  padding-top: 50px;
 }
-.title-gamenet{
-    text-align: center;
-    padding: 20px;
-    color: orange;
+
+.title-gamenet {
+  text-align: center;
+  padding: 20px;
+  color: orange;
 }
-.paragraph-gamenet{
-    padding: 5px;
-    text-align: center;
-    color:#fff;
-    line-height: 2.1;
+
+.paragraph-gamenet {
+  padding: 5px;
+  text-align: center;
+  color: #fff;
+  line-height: 2.1;
 }
-.list-time__gamenet{
-    width: 500px;
-    height: 140px;
-    color: orange;
-    padding: 20px;
+
+.list-time__gamenet {
+  width: 500px;
+  height: 140px;
+  color: orange;
+  padding: 20px;
 }
-.title-table{
-    border: 1px solid orange;
-    font-weight: bold;
-    color: #fff;
-    font-size: 14px;
-    padding: 10px;
+
+.title-table {
+  border: 1px solid orange;
+  font-weight: bold;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px;
 }
-.des-table{
-    border: 1px solid orange;  
-    font-size: 14px;
-    text-align: center;
-    color: #dfdfdf;
-    padding: 10px;
+
+.des-table {
+  border: 1px solid orange;
+  font-size: 14px;
+  text-align: center;
+  color: #a7a7a7;
+  padding: 10px;
 }
-.img-gamenet{
-    height:480px ;
-    width:600px ;
-    border-radius: 15px;
+
+.img-gamenet {
+  height: 480px;
+  width: 600px;
+  border-radius: 15px;
 }
-.gamenet-content__left>.swiper{
-    width: 490px;
-    height: 500px;
-    border-radius: 15px;
-    border-bottom-left-radius: 45px;
-    position: absolute;
+
+.gamenet-content__left>.swiper {
+  width: 490px;
+  height: 500px;
+  border-radius: 15px;
+  border-bottom-left-radius: 45px;
+  position: absolute;
 }
 /* finish styles Explaining the gamenet item  */

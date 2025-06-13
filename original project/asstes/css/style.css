@@ -68,7 +68,7 @@ a {
 .background-div>.second-branch>img {
   margin-right: 48.2rem;
   margin-top: 180px;
-}
+} 
 
 .h1-color-orange {
   color: orange;
@@ -354,4 +354,72 @@ iframe {
 .paragraph-comment {
   max-width: 500px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+  /* Smaller adjustments */
+  .counter-box {
+    flex-direction: column;
+  }
+  
+  .after::after, 
+  .after::before {
+    width: 20%;
+  }
+
+  .content-comment > .swiper > .swiper-button-prev{
+    display: none;
+    width: 0;
+  }
+  .content-comment > .swiper > .swiper-button-next{
+    display: none;
+    width: 0;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px){
+  .branchs,
+  #contact,
+  .container-comments {
+    width: 90%;
+  }
+
+  .image-gallery__top,
+  .image-gallery__bottom {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .image-gallery__top > img,
+  .image-gallery__bottom > img {
+    width: 50%;
+  }
+
+  .event-box__content {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .event-box__item {
+    width: 45%;
+  }
+
+  .contact-us,
+  .map {
+    width: 100%;
+  }
+
+  .content-comment > .swiper {
+    width: 90%;
+  }
+
+  .paragraph-comment {
+    max-width: 90%;
+  }
+  .after::after,
+  .after::before{
+    width: 30%;
+  }
 }
