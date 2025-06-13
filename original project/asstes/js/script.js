@@ -143,9 +143,12 @@ createFluctuatingCounter("counter1", 20, 20, 35);
 // شمارنده دوم: از 40 شروع، بین 40 تا 65 نوسان
 createFluctuatingCounter("counter2", 40, 40, 65);
 
+<<<<<<< HEAD
 // شمارنده سوم: از 50 شروع، بین 50 تا 70 نوسان
 createFluctuatingCounter("counter3", 50, 50, 70);
 
+=======
+>>>>>>> 19b2df7cc3ad2a68c29e2ea989adb7857b87c3f3
 function createFluctuatingCounter(counterId, startValue, min, max) {
     const counterEl = document.getElementById(counterId);
     let current = 0;
@@ -188,50 +191,80 @@ function createFluctuatingCounter(counterId, startValue, min, max) {
 }
 
 // ایجاد ۳ شمارنده مجزا
-createFluctuatingCounter("counter1", 20, 20, 35);   
-createFluctuatingCounter("counter2", 40, 40, 65);   
-createFluctuatingCounter("counter3", 50, 50, 70);  
+createFluctuatingCounter("counter1", 20, 20, 35);
+createFluctuatingCounter("counter2", 40, 40, 65);
+createFluctuatingCounter("counter3", 50, 50, 70);
 
 
-               // اعتبار سنجی در دریافت
+// اعتبار سنجی در دریافت
 
 
 // انتخاب فرم ثبت‌نام و اضافه کردن گوش‌دهنده برای رویداد submit
+// گوش دادن به ارسال فرم ثبت‌نام
 document.querySelector('.form').addEventListener('submit', function (e) {
-    // جلوگیری از ارسال فرم به صورت پیش‌فرض
-    e.preventDefault();
+    e.preventDefault(); // جلوگیری از رفتار پیش‌فرض (ارسال فرم)
 
-    // گرفتن مقادیر ورودی‌ها با استفاده از ID
+    // گرفتن مقادیر ورودی‌ها
     const name = document.getElementById('name');
     const email = document.getElementById('email');
     const password = document.getElementById('password');
 
-    // بررسی اینکه فیلد نام خالی نباشه
+    // بررسی نام و نام خانوادگی
     if (name.value.trim() === '') {
-        alert('لطفاً نام و نام خانوادگی را وارد کنید.');
-        name.focus(); // قرار دادن فوکوس روی فیلد مشکل‌دار
+        Swal.fire({
+            icon: "error",
+            title: "خطا",
+            text: "لطفاً نام و نام خانوادگی را وارد کنید!",
+            confirmButtonText: "باشه"
+        });
+        name.focus();
         return;
     }
 
-    // بررسی اینکه ایمیل شامل @ باشه و خالی نباشه
+    // بررسی ایمیل
     if (!email.value.includes('@') || email.value.trim() === '') {
-        alert('لطفاً یک ایمیل معتبر وارد کنید.');
+        Swal.fire({
+            icon: "error",
+            title: "خطا",
+            text: "لطفاً یک ایمیل معتبر وارد کنید!",
+            confirmButtonText: "باشه"
+        });
         email.focus();
         return;
     }
 
-    // بررسی طول رمز عبور حداقل ۶ کاراکتر
-    if (password.value.length < 6) {
-        alert('رمز عبور باید حداقل ۶ کاراکتر باشد.');
+    if (password.value.trim() === "") {
+    Swal.fire({
+        icon: "error",
+        title: "خطا",
+        text: "لطفاً رمز عبور را وارد کنید!",
+        confirmButtonText: "باشه"
+    }); // پیشنهاد: فوکوس روی فیلد برای تجربه کاربری بهتر
+    return;
+}
+
+    // بررسی رمز عبور
+    if (password.value.trim().length < 6) {
+        Swal.fire({
+            icon: "error",
+            title: "خطا",
+            text: "رمز عبور باید حداقل ۶ کاراکتر باشد!",
+            confirmButtonText: "باشه"
+        });
         password.focus();
         return;
     }
-
-    // اگر همه‌چیز درست بود، پیام موفقیت نمایش داده می‌شود
-    alert('ثبت‌نام با موفقیت انجام شد!');
-
-    // انتقال کاربر به صفحه اصلی سایت
-    window.location.href = 'index.html';
+    
+    // نمایش پیام موفقیت
+    Swal.fire({
+        icon: "success",
+        title: "موفقیت",
+        text: "ثبت‌نام با موفقیت انجام شد!",
+        confirmButtonText: "ادامه"
+    }).then(() => {
+        // بعد از تأیید پیام، انتقال به صفحه اصلی
+        window.location.href = 'index.html';
+    });
 });
 
 
@@ -246,19 +279,60 @@ document.querySelector('.form').addEventListener('submit', function (e) {
 
     // بررسی صحت ایمیل وارد شده
     if (!email.value.includes('@') || email.value.trim() === '') {
-        alert('لطفاً ایمیل معتبر وارد کنید.');
+        // alert('لطفاً ایمیل معتبر وارد کنید.');
+        Swal.fire({
+            icon: "error",
+            title: "خطا",
+            text: "لطفاً ایمیل معتبر وارد کنید!",
+        });
         email.focus();
         return;
     }
 
+    if (password.value.trim() === "") {
+    Swal.fire({
+        icon: "error",
+        title: "خطا",
+        text: "لطفاً رمز عبور را وارد کنید!",
+        confirmButtonText: "باشه"
+    }); // پیشنهاد: فوکوس روی فیلد برای تجربه کاربری بهتر
+    return;
+}
+
     // بررسی اینکه رمز عبور خالی نباشد
-    if (password.value.trim() === '') {
-        alert('لطفاً رمز عبور را وارد کنید.');
+    if (password.value.length < 6) {
+        // alert('لطفاً رمز عبور را وارد کنید.');
+        Swal.fire({
+            icon: "error",
+            title: "خطا",
+            text: "رمز عبور خود را بیشتر از 6 کاراکتر وارد کنید!",
+        });
         password.focus();
         return;
     }
 
     // در صورت موفقیت، نمایش پیام و انتقال
-    alert('ورود با موفقیت انجام شد!');
-    window.location.href = 'index.html';
+    Swal.fire({
+        title: "موفق!",
+        text: "ثبت‌نام با موفقیت انجام شد!",
+        icon: "success"
+    })
+        .then((result) => {
+            /* Read more about isConfirmed, isDenied below */
+            if (result.isConfirmed) {
+                // Swal.fire("Saved!", "", "success");
+                window.location.href = 'index.html';
+            }
+            //  else if (result.isDenied) {
+            //     Swal.fire("Changes are not saved", "", "info");
+            // }
+        });
+
+    // alert('ورود با موفقیت انجام شد!');
+
 });
+<<<<<<< HEAD
+=======
+// شمارنده سوم: از 50 شروع، بین 50 تا 70 نوسان
+createFluctuatingCounter("counter3", 50, 50, 70);
+>>>>>>> 19b2df7cc3ad2a68c29e2ea989adb7857b87c3f3
