@@ -16,7 +16,31 @@ ul {
 a {
   text-decoration: none;
 }
+::-webkit-scrollbar {
+  width: 13px;
+}
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: orange;
+  border-radius: 10px;
+  border: 2px solid #f0f0f0;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ff9900;
+}
+/* برای Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: orange #f0f0f0;
+}
 
+/* برای IE/Edge قدیمی */
+body {
+  -ms-overflow-style: none;
+}
 /* start styles header title */
 .header {
   background: url('../images/pexels-matthardy-2109740.jpg')no-repeat center center/cover;

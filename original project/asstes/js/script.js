@@ -20,6 +20,13 @@ document.addEventListener("DOMContentLoaded", function () {
         },
     });
 });
+// بررسی پشتیبانی از Swiper
+if (typeof Swiper === 'undefined') {
+  // لود پلی‌فیل اگر Swiper وجود نداشت
+  var script = document.createElement('script');
+  script.src = 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js';
+  document.head.appendChild(script);
+}
 // live graph
 // گرفتن عنصر شمارنده با آیدی خاص
 const counter = document.getElementById("counter");
@@ -136,7 +143,9 @@ createFluctuatingCounter("counter1", 20, 20, 35);
 // شمارنده دوم: از 40 شروع، بین 40 تا 65 نوسان
 createFluctuatingCounter("counter2", 40, 40, 65);
 
-<<<<<<< HEAD
+// شمارنده سوم: از 50 شروع، بین 50 تا 70 نوسان
+createFluctuatingCounter("counter3", 50, 50, 70);
+
 function createFluctuatingCounter(counterId, startValue, min, max) {
     const counterEl = document.getElementById(counterId);
     let current = 0;
@@ -253,7 +262,3 @@ document.querySelector('.form').addEventListener('submit', function (e) {
     alert('ورود با موفقیت انجام شد!');
     window.location.href = 'index.html';
 });
-=======
-// شمارنده سوم: از 50 شروع، بین 50 تا 70 نوسان
-createFluctuatingCounter("counter3", 50, 50, 70);
->>>>>>> e65274d6c6698d2739f341534ccc5e93ca2b9fa6
