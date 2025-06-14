@@ -143,12 +143,9 @@ createFluctuatingCounter("counter1", 20, 20, 35);
 // شمارنده دوم: از 40 شروع، بین 40 تا 65 نوسان
 createFluctuatingCounter("counter2", 40, 40, 65);
 
-<<<<<<< HEAD
 // شمارنده سوم: از 50 شروع، بین 50 تا 70 نوسان
 createFluctuatingCounter("counter3", 50, 50, 70);
 
-=======
->>>>>>> 19b2df7cc3ad2a68c29e2ea989adb7857b87c3f3
 function createFluctuatingCounter(counterId, startValue, min, max) {
     const counterEl = document.getElementById(counterId);
     let current = 0;
@@ -331,8 +328,4 @@ document.querySelector('.form').addEventListener('submit', function (e) {
     // alert('ورود با موفقیت انجام شد!');
 
 });
-<<<<<<< HEAD
-=======
-// شمارنده سوم: از 50 شروع، بین 50 تا 70 نوسان
-createFluctuatingCounter("counter3", 50, 50, 70);
->>>>>>> 19b2df7cc3ad2a68c29e2ea989adb7857b87c3f3
+
