@@ -22,10 +22,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 // بررسی پشتیبانی از Swiper
 if (typeof Swiper === 'undefined') {
-  // لود پلی‌فیل اگر Swiper وجود نداشت
-  var script = document.createElement('script');
-  script.src = 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js';
-  document.head.appendChild(script);
+    // لود پلی‌فیل اگر Swiper وجود نداشت
+    var script = document.createElement('script');
+    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js';
+    document.head.appendChild(script);
 }
 // live graph
 // گرفتن عنصر شمارنده با آیدی خاص
@@ -196,77 +196,77 @@ createFluctuatingCounter("counter3", 50, 50, 70);
 // اعتبار سنجی در دریافت
 
 
-// انتخاب فرم ثبت‌نام و اضافه کردن گوش‌دهنده برای رویداد submit
-// گوش دادن به ارسال فرم ثبت‌نام
-document.querySelector('.form').addEventListener('submit', function (e) {
-    e.preventDefault(); // جلوگیری از رفتار پیش‌فرض (ارسال فرم)
+// // انتخاب فرم ثبت‌نام و اضافه کردن گوش‌دهنده برای رویداد submit
+// // گوش دادن به ارسال فرم ثبت‌نام
+// document.querySelector('.form').addEventListener('submit', function (e) {
+//     e.preventDefault(); // جلوگیری از رفتار پیش‌فرض (ارسال فرم)
 
-    // گرفتن مقادیر ورودی‌ها
-    const name = document.getElementById('name');
-    const email = document.getElementById('email');
-    const password = document.getElementById('password');
+//     // گرفتن مقادیر ورودی‌ها
+//     const name = document.getElementById('nameSingUp');
+//     const email = document.getElementById('emailSingUp');
+//     const password = document.getElementById('passwordSingUp');
 
-    // بررسی نام و نام خانوادگی
-    if (name.value.trim() === '') {
-        Swal.fire({
-            icon: "error",
-            title: "خطا",
-            text: "لطفاً نام و نام خانوادگی را وارد کنید!",
-            confirmButtonText: "باشه"
-        });
-        name.focus();
-        return;
-    }
+//     // بررسی نام و نام خانوادگی
+//     if (name.value.trim() === '') {
+//         Swal.fire({
+//             icon: "error",
+//             title: "خطا",
+//             text: "لطفاً نام و نام خانوادگی را وارد کنید!",
+//             confirmButtonText: "باشه"
+//         });
+//         name.focus();
+//         return;
+//     }
 
-    // بررسی ایمیل
-    if (!email.value.includes('@') || email.value.trim() === '') {
-        Swal.fire({
-            icon: "error",
-            title: "خطا",
-            text: "لطفاً یک ایمیل معتبر وارد کنید!",
-            confirmButtonText: "باشه"
-        });
-        email.focus();
-        return;
-    }
+//     // بررسی ایمیل
+//     if (!email.value.includes('@') || email.value.trim() === '') {
+//         Swal.fire({
+//             icon: "error",
+//             title: "خطا",
+//             text: "لطفاً یک ایمیل معتبر وارد کنید!",
+//             confirmButtonText: "باشه"
+//         });
+//         email.focus();
+//         return;
+//     }
 
-    if (password.value.trim() === "") {
-    Swal.fire({
-        icon: "error",
-        title: "خطا",
-        text: "لطفاً رمز عبور را وارد کنید!",
-        confirmButtonText: "باشه"
-    }); // پیشنهاد: فوکوس روی فیلد برای تجربه کاربری بهتر
-    return;
-}
+//     if (password.value.trim() === "") {
+//         Swal.fire({
+//             icon: "error",
+//             title: "خطا",
+//             text: "لطفاً رمز عبور را وارد کنید!",
+//             confirmButtonText: "باشه"
+//         }); // پیشنهاد: فوکوس روی فیلد برای تجربه کاربری بهتر
+//         return;
+//     }
 
-    // بررسی رمز عبور
-    if (password.value.trim().length < 6) {
-        Swal.fire({
-            icon: "error",
-            title: "خطا",
-            text: "رمز عبور باید حداقل ۶ کاراکتر باشد!",
-            confirmButtonText: "باشه"
-        });
-        password.focus();
-        return;
-    }
-    
-    // نمایش پیام موفقیت
-    Swal.fire({
-        icon: "success",
-        title: "موفقیت",
-        text: "ثبت‌نام با موفقیت انجام شد!",
-        confirmButtonText: "ادامه"
-    }).then(() => {
-        if (result.isConfirmed) {
-            // Swal.fire("Saved!", "", "success");
-             checkCookie(); // ذخیره یا نمایش ایمیل در کوکی
-        // بعد از تأیید پیام، انتقال به صفحه اصلی
-            window.location.href = 'index.html';
-        }
-    });
-});
+//     // بررسی رمز عبور
+//     if (password.value.trim().length < 6) {
+//         Swal.fire({
+//             icon: "error",
+//             title: "خطا",
+//             text: "رمز عبور باید حداقل ۶ کاراکتر باشد!",
+//             confirmButtonText: "باشه"
+//         });
+//         password.focus();
+//         return;
+//     }
+
+//     // نمایش پیام موفقیت
+//     Swal.fire({
+//         icon: "success",
+//         title: "موفقیت",
+//         text: "ثبت‌نام با موفقیت انجام شد!",
+//         confirmButtonText: "ادامه"
+//     }).then(() => {
+//         if (result.isConfirmed) {
+//             // Swal.fire("Saved!", "", "success");
+//             checkCookie(); // ذخیره یا نمایش ایمیل در کوکی
+//             // بعد از تأیید پیام، انتقال به صفحه اصلی
+//             window.location.href = 'index.html';
+//         }
+//     });
+// });
 
 
 // انتخاب فرم ورود و اضافه کردن گوش‌دهنده برای رویداد submit
@@ -275,8 +275,8 @@ document.querySelector('.form').addEventListener('submit', function (e) {
     e.preventDefault();
 
     // گرفتن فیلدهای ایمیل و رمز عبور
-    const email = document.getElementById('email');
-    const password = document.getElementById('password');
+    const email = document.getElementById('emailLogIn');
+    const password = document.getElementById('passwordLogIn');
 
     // بررسی صحت ایمیل وارد شده
     if (!email.value.includes('@') || email.value.trim() === '') {
@@ -291,14 +291,14 @@ document.querySelector('.form').addEventListener('submit', function (e) {
     }
 
     if (password.value.trim() === "") {
-    Swal.fire({
-        icon: "error",
-        title: "خطا",
-        text: "لطفاً رمز عبور را وارد کنید!",
-        confirmButtonText: "باشه"
-    }); // پیشنهاد: فوکوس روی فیلد برای تجربه کاربری بهتر
-    return;
-}
+        Swal.fire({
+            icon: "error",
+            title: "خطا",
+            text: "لطفاً رمز عبور را وارد کنید!",
+            confirmButtonText: "باشه"
+        }); // پیشنهاد: فوکوس روی فیلد برای تجربه کاربری بهتر
+        return;
+    }
 
     // بررسی اینکه رمز عبور خالی نباشد
     if (password.value.length < 6) {
@@ -341,70 +341,177 @@ createFluctuatingCounter("counter3", 50, 50, 70);
 
 
 
-                    // Cookis
+// // Cookis
 
 
 
 
 
-// ذخیره کوکی
-    function setCookie(cName, cValue, cDays) {
-      let d = new Date();
-      d.setTime(d.getTime() + (cDays * 24 * 60 * 60 * 1000));
-      let expires = "expires=" + d.toUTCString();
-      document.cookie = cName + "=" + cValue + ";" + expires + ";path=/";
-    }
+// // ذخیره کوکی
+// function setCookie(cName, cValue, cDays) {
+//     let d = new Date();
+//     d.setTime(d.getTime() + (cDays * 24 * 60 * 60 * 1000));
+//     let expires = "expires=" + d.toUTCString();
+//     document.cookie = cName + "=" + cValue + ";" + expires + ";path=/";
+// }
 
-    // گرفتن کوکی
-    function getCookie(cName) {
-      let name = cName + "=";
-      let decoded = decodeURIComponent(document.cookie);
-      let cookies = decoded.split(";");
-      for (let i = 0; i < cookies.length; i++) {
-        let c = cookies[i].trim();
-        if (c.indexOf(name) === 0) {
-          return c.substring(name.length);
-        }
-      }
-      return "";
-    }
+// // گرفتن کوکی
+// function getCookie(cName) {
+//     let name = cName + "=";
+//     let decoded = decodeURIComponent(document.cookie);
+//     let cookies = decoded.split(";");
+//     for (let i = 0; i < cookies.length; i++) {
+//         let c = cookies[i].trim();
+//         if (c.indexOf(name) === 0) {
+//             return c.substring(name.length);
+//         }
+//     }
+//     return "";
+// }
 
-    // چک کردن کوکی
-    function checkCookie() {
-      let email = getCookie("userEmail");
-      if (email !== "") {
-        Swal.fire("خوش آمدید!", "ایمیل شما: " + email, "success");
-      }
-    }
+// // چک کردن کوکی
+// function checkCookie() {
+//     let email = getCookie("userEmail");
+//     if (email !== "") {
+//         Swal.fire("خوش آمدید!", "ایمیل شما: " + email, "success");
+//     }
+// }
 
-    // وقتی فرم ارسال میشه
-    document.querySelector('.form').addEventListener('submit', function (e) {
-      e.preventDefault();
-      const name = document.getElementById('name');
-      const email = document.getElementById('email');
-      const password = document.getElementById('password');
+// // وقتی فرم ارسال میشه
+// document.querySelector('.form').addEventListener('submit', function (e) {
+//     e.preventDefault();
+//     const name = document.getElementById('nameSingUp');
+//     const email = document.getElementById('emailSingUp');
+//     const password = document.getElementById('passwordSingUp');
 
-      if (name.value.trim() === "") {
-        Swal.fire("خطا", "نام وارد نشده", "error");
-        return;
-      }
+//     if (name.value.trim() === "") {
+//         Swal.fire("خطا", "نام وارد نشده", "error");
+//         return;
+//     }
 
-      if (email.value.trim() === "" || !email.value.includes("@")) {
-        Swal.fire("خطا", "ایمیل معتبر وارد کن", "error");
-        return;
-      }
+//     if (name.value.length < 5) {
+//         Swal.fire("خطا", "لطفا نام و نام خانوادگی خود را درست وارد کنید", "error");
+//         return;
+//     }
 
-      if (password.value.trim().length < 6) {
-        Swal.fire("خطا", "رمز عبور باید حداقل ۶ کاراکتر باشد", "error");
-        return;
-      }
+//     if (email.value.trim() === "" || !email.value.includes("@")) {
+//         Swal.fire("خطا", "ایمیل معتبر وارد کن", "error");
+//         return;
+//     }
 
-      // ذخیره کوکی
-      setCookie("Name", name.value.trim(), 10);
+//     // ذخیره کوکی
+//     setCookie("Name", name.value.trim(), 10);
 
-      Swal.fire("موفق", "ثبت‌نام با موفقیت انجام شد", "success").then(() => {
-        // بعد از تأیید می‌تونی به صفحه‌ای منتقل بشی
-        // window.location.href = "index.html";
-        checkCookie();
-      });
-    });
+
+//     Swal.fire({
+//         icon: "success",
+//         title: "ثبت‌ نام موفق",
+//         text: "در حال انتقال به صفحه اصلی..."
+//     }).then((result) => {
+//         if (result.isConfirmed) {
+//             window.location.href = 'index.html';
+//         }
+//     });
+
+//     $.ajax({
+//         url: "https://your-api.com/api/signup",
+//         method: "POST",
+//         contentType: "application/json",
+//         data: JSON.stringify({
+//             name: name.value.trimStart().trimEnd(),
+//             email: email.value.trimStart().trimEnd(),
+//             password: password.value.trimStart().trimEnd()
+//         }),
+//         success: function (response) {
+//             // فرض بر اینه که سرور فقط پیام موفقیت برمی‌گردونه
+//             // Swal.fire("ثبت‌نام موفق", "اکنون وارد شوید", "success");
+//             // فرض: سرور این دو مقدار رو برمی‌گردونه
+//             const token = response.token;
+//             const refreshToken = response.refreshToken;
+
+//             setCookie("token", token, 1);      // 1 روز
+//             setCookie("refreshToken", refreshToken, 7);
+//             setCookie("name", name, 7);
+            
+//         },
+//         error: function (xhr) {
+//             Swal.fire("خطا", xhr.responseText || "مشکلی پیش آمده", "error");
+//         }
+//     });
+
+// });
+
+
+
+
+
+
+
+
+
+
+// signIn
+
+
+
+
+// // ذخیره کوکی
+// function setCookie(cName, cValue, cDays) {
+//     let d = new Date();
+//     d.setTime(d.getTime() + (cDays * 24 * 60 * 60 * 1000));
+//     let expires = "expires=" + d.toUTCString();
+//     document.cookie = cName + "=" + cValue + ";" + expires + ";path=/";
+// }
+
+// // گرفتن کوکی
+// function getCookie(cName) {
+//     let name = cName + "=";
+//     let decoded = decodeURIComponent(document.cookie);
+//     let cookies = decoded.split(";");
+//     for (let i = 0; i < cookies.length; i++) {
+//         let c = cookies[i].trim();
+//         if (c.indexOf(name) === 0) {
+//             return c.substring(name.length);
+//         }
+//     }
+//     return "";
+// }
+
+// // چک کردن کوکی
+// function checkCookie() {
+//     let email = getCookie("userEmail");
+//     if (email !== "") {
+//         Swal.fire("خوش آمدید!", "ایمیل شما: " + email, "success");
+//     }
+// }
+
+// // وقتی فرم ارسال میشه
+// document.querySelector('#formId').addEventListener('submit', function (e) {
+//     e.preventDefault();
+//     const name = document.getElementById('nameLogIn');
+//     const email = document.getElementById('emailLogIn');
+//     const password = document.getElementById('passwordLogIn');
+
+//     if (name.value != null && name.value.trim() === "") {
+//         Swal.fire("خطا", "نام وارد نشده", "error");
+//         return;
+//     }
+
+//     if (email.value.trim() === "" || !email.value.includes("@")) {
+//         Swal.fire("خطا", "ایمیل معتبر وارد کن", "error");
+//         return;
+//     }
+
+//     // ذخیره کوکی
+//     setCookie("Name", name.value.trim(), 10);
+
+//     Swal.fire({
+//         icon: "success",
+//         title: "ثبت‌ نام موفق",
+//         text: "در حال انتقال به صفحه اصلی..."
+//     }).then((result) => {
+//         if (result.isConfirmed) {
+//             window.location.href = '../../index.html';
+//         }
+//     });
+// });
