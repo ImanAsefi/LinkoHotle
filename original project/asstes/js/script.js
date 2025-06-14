@@ -332,7 +332,7 @@ document.querySelector('.form').addEventListener('submit', function (e) {
     // alert('ورود با موفقیت انجام شد!');
 
 });
-<<<<<<< HEAD
+
 // شمارنده سوم: از 50 شروع، بین 50 تا 70 نوسان
 createFluctuatingCounter("counter3", 50, 50, 70);
 
@@ -408,13 +408,3 @@ createFluctuatingCounter("counter3", 50, 50, 70);
         checkCookie();
       });
     });
-
- 
-
-
-
-
-
-=======
->>>>>>> 7f42df3dec63bdceb0b73612ed251ebc917f69bb
-
