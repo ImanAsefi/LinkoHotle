@@ -1,11 +1,38 @@
 let name = document.getElementById('name');
 let email = document.getElementById('email');
 
+
+
 document.querySelector('.form').addEventListener('submit', function (e) {
     e.preventDefault();
-    const name = document.getElementById('nameSingUp');
-    const email = document.getElementById('emailSingUp');
-    const password = document.getElementById('passwordSingUp');
+    $.ajax({
+        url: "https://your-api.com/api/signup",
+        method: "GET",
+        contentType: "application/json",
+        data: JSON.stringify({
+            name: name.value.trimStart().trimEnd(),
+            email: email.value.trimStart().trimEnd(),
+            password: password.value.trimStart().trimEnd()
+        }),
+        success: function (response) {
+            // فرض بر اینه که سرور فقط پیام موفقیت برمی‌گردونه
+            // Swal.fire("ثبت‌نام موفق", "اکنون وارد شوید", "success");
+            // فرض: سرور این دو مقدار رو برمی‌گردونه
+            const token = response.token;
+            const refreshToken = response.refreshToken;
+
+            setCookie("token", token, 1);      // 1 روز
+            setCookie("refreshToken", refreshToken, 7);
+            setCookie("name", name, 7);
+            
+        },
+        error: function (xhr) {
+            Swal.fire("خطا", xhr.responseText || "مشکلی پیش آمده", "error");
+        }
+    });
+    const name = document.getElementById('name');
+    const email = document.getElementById('email');
+
 
     if (name.value.trim() === "") {
         Swal.fire("خطا", "نام وارد نشده", "error");
