@@ -20,7 +20,7 @@ a {
 }
 
 #nav {
-  margin-top: 25px;
+  margin-bottom: 35px;
   margin-right: auto;
   margin-left: auto;
   width: 75rem;
@@ -35,7 +35,7 @@ a {
   padding-left: 3rem;
   padding-right: 3rem;
   position: relative;
-  top: 18px;
+  top: 17.5px;
   z-index: 1;
 }
 
