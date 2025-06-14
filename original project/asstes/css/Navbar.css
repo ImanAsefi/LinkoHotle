@@ -19,7 +19,7 @@ a {
   text-decoration: none;
 }
 
-nav {
+#nav {
   margin-top: 25px;
   margin-right: auto;
   margin-left: auto;
@@ -31,8 +31,10 @@ nav {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-left: 3rem;
   padding-right: 3rem;
+  position: relative;
   top: 18px;
   z-index: 1;
 }
@@ -40,14 +42,20 @@ nav {
 .menu {
   display: flex;
   align-items: center;
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
 }
-.name-hotel{
-  display:flex ;
+
+.name-hotel {
+  display: flex;
+  margin-bottom: 20px;
 }
+
 .name-hotel>.h1-nav {
   font-size: 30px;
   color: #fff;
-  margin-left: 10px;
+  margin-right: 10px;
   margin-top: 16px;
 }
 
@@ -81,6 +89,79 @@ nav {
   box-shadow: 5px 4px 15px rgba(255, 166, 0, 0.575);
 }
 
+.authentication,
+.authentication-signup {
+  position: absolute;
+  top: 15px;
+  left: 50px;
+  display: flex;
+  width: 140px;
+  padding: 10px;
+  background-color: orange;
+  border-radius: 8px;
+  transition-duration: 0.85s;
+  z-index: 1;
+}
+
+.authentication-signup {
+  z-index: 0;
+}
+
+.text-authentication {
+  margin-right: auto;
+  margin-left: auto;
+  color: #fff;
+}
+
+.authentication-user {
+  min-width: 140px;
+  max-width: 250px;
+}
+
+.authentication:hover,
+.authentication-signup:hover {
+  background-color: rgb(255, 136, 0);
+}
+
+.icon-authentication,
+.icon-authentication-user {
+  color: #fff;
+  padding-top: 5px;
+}
+
+.icon-authentication-user {
+  transition-duration: 0.85s;
+}
+
+.authentication-user>.icon-authentication-user.rotate {
+  transform: rotate(-180deg);
+}
+
+.profile.hidden {
+  display: none;
+  opacity: 0;
+}
+
+.profile {
+  min-width: 180px;
+  max-width: 240px;
+  height: 100px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #333;
+  color: orange;
+  border: 2px solid orange;
+  position: absolute;
+  top: 100px;
+  left: 90px;
+  z-index: 3;
+}
+
+.authentication-user :hover>.profile {
+  display: block;
+
+}
+
 .second-child {
   border-bottom: none;
   margin-top: 0px;
@@ -88,44 +169,114 @@ nav {
 }
 
 @media screen and (max-width: 480px) {
-  nav {
-    flex-direction: column; /* تغییر از row به column */
-    width: 90%;
-    height: auto; /* ارتفاع خودکار */
-    padding: 0.8rem 1rem;
+  #nav {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+    width: 100%;
     border-radius: 0;
-    align-items: center;
+    margin-top: 0;
+    margin-bottom: 20px;
   }
 
-  /* استایل جدید برای بخش عنوان و آیکون */
   .nav-header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-bottom: 10px;
+    padding: 0.5rem 0;
   }
 
-  .name-hotel>.h1-nav{
-    padding-left: 5px;
+  .name-hotel {
+    margin-bottom: 0;
+    margin-left: auto;
   }
 
-  .menu {
+  .name-hotel>.h1-nav {
+    margin-top: 0;
+    font-size: 1.5rem;
+  }
+
+  .icon-nav {
+    margin-top: 10px;
+    font-size: 1.5rem;
+  }
+
+  .authentication-container {
     display: flex;
+    gap: 0.5rem;
+  }
+
+
+  .authentication,
+  .authentication-signup,
+  .authentication-user {
+    width: auto;
+    padding: 0.5rem;
+    margin: 0;
+    left: 0;
+  }
+
+  /* منو در پایین */
+  .menu {
+    width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.3rem;
     margin-top: 1rem;
+    padding: 0.5rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   .menu>li>a {
     font-size: 0.9rem;
     padding: 0.3rem 0.6rem;
+    margin: 0.2rem;
+  }
+
+  /* پروفایل در موبایل */
+  .profile {
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  #nav {
+    width: 95%;
+    padding: 1rem 2rem;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .menu {
+    width: auto;
     margin: 0;
   }
 
+  .menu>li>a {
+    font-size: 0.95rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .name-hotel{
+    margin-left: auto;
+  }
+
+  .name-hotel>.h1-nav {
+    font-size: 1.5rem;
+  }
+
+
+  .authentication,
+  .authentication-signup,
+  .authentication-user {
+    width: auto;
+    padding: 0.5rem 1rem;
+  }
 }
+
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   nav {
     width: 95%;
@@ -138,8 +289,8 @@ nav {
   .name-hotel {
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    margin: 0 auto 0.5rem auto;
+    justify-content: start;
+    margin: 0 0 0.5rem auto;
   }
 
   .icon-nav {
@@ -148,7 +299,7 @@ nav {
     margin-right: 8px;
   }
 
-  .name-hotel > .h1-nav {
+  .name-hotel>.h1-nav {
     font-size: 1.4rem;
     margin-top: 8px;
   }
@@ -161,18 +312,9 @@ nav {
     width: 100%;
   }
 
-  .menu > li > a {
+  .menu>li>a {
     font-size: 1rem;
     padding: 0.5rem 1rem;
     margin: 0.3rem;
-  }
-}
-@media screen and (min-width: 1025px) {
-  nav {
-    width: 75rem;
-    height: 5rem;
-    flex-direction: row;
-    align-items: center;
-    padding: 0 3rem;
   }
 }
