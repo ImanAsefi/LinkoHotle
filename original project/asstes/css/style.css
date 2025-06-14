@@ -386,6 +386,7 @@ iframe {
 
 
 @media screen and (max-width: 480px) {
+
   /* بهبود بخش تاریخچه */
   .history {
     height: auto;
@@ -497,6 +498,33 @@ iframe {
   #contact,
   .container-comments {
     width: 90%;
+  }
+
+  .history {
+    height: auto;
+    padding: 20px 0;
+    width: 90%;
+  }
+
+  .background-history>.history-children>img,
+  .background-history>.second-history>img {
+    width: 90%;
+    margin: 20px auto;
+    display: block;
+  }
+
+  .background-history>.first-history>h1,
+  .background-history>.second-history>h1 {
+    margin: 20px auto;
+    text-align: center;
+    position: static;
+  }
+
+  .first-history-paragraph,
+  .second-history-paragraph {
+    width: 90%;
+    margin: 10px auto;
+    text-align: justify;
   }
 
   .image-gallery__top,
