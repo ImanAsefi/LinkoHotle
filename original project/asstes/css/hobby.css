@@ -308,6 +308,9 @@ body {
     border-radius: 15px;
   }
 
+  .title-des{
+    margin-top: 15rem;
+  }
   .title-des::after,
   .title-des::before {
     width: 0;
@@ -318,6 +321,12 @@ body {
   .des-gym {
     display: block;
     min-width: 30px;
+  }
+
+  .des-pool{
+    /* margin-top: 15rem; */
+    width: 90%;
+    height: 900px;
   }
 
   .description-pool-gym {
@@ -403,7 +412,6 @@ body {
   .list-time__gamenet {
     width: 100%;
     overflow-x: auto;
-    /* برای جدول های عریض */
   }
 
   .title-gamenet {
@@ -452,18 +460,20 @@ body {
   .des-pool,
   .content-pool,
   .des-gym,
-  .content-gym{
+  .content-gym {
     display: flex;
     flex-direction: column;
     width: 680px;
     border-radius: 15px;
   }
+
   .img-slider-pool,
-  .img-gym{
+  .img-gym {
     border-radius: 15px;
     margin: 10px auto;
   }
-   .list-time__gamenet {
+
+  .list-time__gamenet {
     margin: 2px auto;
     text-align: center;
     width: 100%;
@@ -474,7 +484,7 @@ body {
     width: 680px;
   }
 
-  .description-pool-gym{
+  .description-pool-gym {
     width: 90%;
   }
 
