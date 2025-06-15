@@ -40,6 +40,7 @@ a {
 }
 
 .menu {
+  padding: 0;
   display: flex;
   align-items: center;
   margin: 0 auto;
@@ -66,7 +67,7 @@ a {
 }
 
 .menu>li:hover>a:hover {
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   margin-left: 5px;
   display: block;
   transition: 0.4s;
@@ -105,6 +106,10 @@ a {
 
 .authentication-signup {
   z-index: 0;
+}
+.hidden{
+  display: none;
+  opacity: 0;
 }
 
 .text-authentication {
@@ -155,6 +160,7 @@ a {
   top: 100px;
   left: 90px;
   z-index: 3;
+  transition: all 400ms ease-in-out;
 }
 
 .authentication-user :hover>.profile {
