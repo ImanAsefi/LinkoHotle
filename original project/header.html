@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
-<html lang="en">
-=======
 <html lang="fa">
 <head>
     <meta charset="UTF-8">
@@ -21,66 +18,47 @@
       </div>
       
       <div class="auth-buttons">
-        <div class="authentication authentication-signup hidden">
-          <a href="sign-in.html" class="text-authentication">ورود | عضویت</a>
-        </div>  
-        <div class="authentication authentication-user">
-          <i class="fas fa-user icon-authentication"></i> 
-          <p class="text-authentication">ایمان آصفی</p>
-          <i class="fas fa-angle-down icon-authentication-user rotate"></i>
-        </div>
-      </div>
-    </div>
->>>>>>> d728d407e635afc8988a96ffbe03dff34997f208
+  <!-- دکمه ورود/ثبت‌نام -->
+  <div class="authentication authentication-signup hidden" id="join">
+    <a href="sign-in.html" class="text-authentication">ورود | عضویت</a>
+  </div>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>هدر سایت</title>
-</head>
+  <!-- پروفایل کاربر (مخفی پیش‌فرض) -->
+  <div class="authentication authentication-user hidden" id="seeProfile">
+    <i class="fas fa-user icon-authentication"></i> 
+    <p class="text-authentication" id="username">نام کاربر</p>
+    <i class="fas fa-angle-down icon-authentication-user rotate"></i>
+  </div>
+</div>
 
-<body>
-  <!-- header.html -->
-  <header>
-    <nav id="nav">
-      <div class="nav-top-section">
-        <div class="name-hotel">
-          <span class="text-primary">
-            <i class="fab fa-edge icon-nav"></i>
-          </span>
-          <h1 class="h1-nav">لینکو</h1>
-        </div>
+<script>
+  function getCookie(cName) {
+    let name = cName + "=";
+    let decoded = decodeURIComponent(document.cookie);
+    let cookies = decoded.split(";");
+    for (let i = 0; i < cookies.length; i++) {
+      let c = cookies[i].trim();
+      if (c.indexOf(name) === 0) {
+        return c.substring(name.length);
+      }
+    }
+    return "";
+  }
 
-        <div class="auth-buttons">
-          <div class="authentication authentication-signup">
-            <a href="sign-in.html" class="text-authentication">ورود | عضویت</a>
-          </div>
-          <div class="authentication authentication-user">
-            <i class="fas fa-user icon-authentication"></i>
-            <p class="text-authentication">ایمان آصفی</p>
-            <i class="fas fa-angle-down icon-authentication-user rotate"></i>
-          </div>
-        </div>
-        <script>
+  const getName = getCookie('name'); // فرض بر اینه که کوکی با نام 'name' ست شده
+  const join = document.getElementById('join');
+  const profile = document.getElementById('seeProfile');
+  const username = document.getElementById('username');
 
-          function getCookie(cName) {
-            let name = cName + "=";
-            let decoded = decodeURIComponent(document.cookie);
-            let cookies = decoded.split(";");
-            for (let i = 0; i < cookies.length; i++) {
-              let c = cookies[i].trim();
-              if (c.indexOf(name) === 0) {
-                return c.substring(name.length);
-              }
-            }
-            return "";
-          }
-          const getName = getCookie('name');
-          if(getName == ''){
-            
-          }
-
-        </script>
+  if (getName === '') {
+    join.classList.remove("hidden");
+    profile.classList.add("hidden");
+  } else {
+    join.classList.add("hidden");
+    profile.classList.remove("hidden");
+    username.textContent = getName; // نمایش نام در navbar
+  }
+</script>
       </div>
 
       <ul class="menu">
