@@ -36,14 +36,12 @@ a {
   background-color: #ff9900;
 }
 
-/* برای Firefox */
 html {
   scrollbar-width: thin;
   scrollbar-color: orange #f0f0f0;
 }
 
-/* برای IE/Edge قدیمی */
-body {
+ body {
   -ms-overflow-style: none;
 }
 
@@ -283,9 +281,47 @@ body {
   position: absolute;
 }
 
+.container-library {
+  width: 73rem;
+  background-color: #333;
+  border: 3px solid orange;
+  box-shadow: 15px 12px 30px #00000063;
+  margin: 20px auto;
+  border-radius: 15px;
+}
+
+.content-library {}
+
+.images-library {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 15px 10px;
+}
+
+.img-library {
+  width: 300px;
+  height: auto;
+  border-radius: 15px;
+}
+
+.explaining-library {
+  text-align: center;
+}
+
+.title-library {
+  color: orange;
+  padding: 10px;
+}
+
+.paragraph-library {
+  color: #a7a7a7;
+  padding: 15px 20px;
+}
+
 /* finish styles Explaining the gamenet item  */
 /* Responsive Styles */
- @media screen and (max-width:480px) {
+@media screen and (max-width:480px) {
+
   .header {
     height: 100%;
     width: 95%;
@@ -295,9 +331,10 @@ body {
     width: 100%;
   }
 
-  .title-header{
+  .title-header {
     font-size: 1.2rem;
   }
+
   .paragraph-header {
     text-align: center;
     padding: 10px;
@@ -308,8 +345,10 @@ body {
     display: flex;
     flex-direction: column;
     width: 300px;
-    height: 900px;
+    height: 800px;
     border-radius: 15px;
+    border: 3px solid rgba(255, 166, 0, 0.836);
+    margin-top: 5px;
   }
 
   .title-des::after,
@@ -426,6 +465,61 @@ body {
   .container-gamenet {
     width: 300px;
   }
+
+  .des-pool,
+  .des-gym {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 1rem;
+  }
+
+  .img-slider-pool,
+  .img-gym {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+  }
+
+  .content-pool,
+  .content-gym {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: justify;
+  }
+  .container-library {
+    width: 95%;
+    margin: 1.5rem auto;
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+
+  .images-library {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .img-library {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+  }
+
+  .title-library {
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 1rem 0 0.5rem 0;
+  }
+
+  .paragraph-library {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    text-align: justify;
+    padding: 0 1rem;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -482,7 +576,7 @@ body {
 
   .gamenet {
     width: 510px;
-    margin: 10px auto; 
+    margin: 10px auto;
   }
 
   .description-pool-gym {
@@ -543,5 +637,36 @@ body {
 
   .container-gamenet {
     width: 100%;
+  }
+
+  .container-library {
+    width: 90%;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border-radius: 1rem;
+  }
+
+  .images-library {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem;
+  }
+
+  .img-library {
+    width: 45%;
+    height: auto;
+    border-radius: 15px;
+  }
+
+  .title-library {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .paragraph-library {
+    font-size: 1rem;
+    line-height: 2;
+    text-align: justify;
+    padding: 1rem 2rem;
   }
 }
