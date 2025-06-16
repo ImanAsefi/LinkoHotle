@@ -41,7 +41,7 @@ html {
   scrollbar-color: orange #f0f0f0;
 }
 
- body {
+body {
   -ms-overflow-style: none;
 }
 
@@ -290,7 +290,6 @@ html {
   border-radius: 15px;
 }
 
-.content-library {}
 
 .images-library {
   display: flex;
