@@ -263,7 +263,7 @@ body {
   border: 1px solid orange;
   font-size: 14px;
   text-align: center;
-  color: #a7a7a7;
+  color: #fff;
   padding: 10px;
 }
 
@@ -313,8 +313,9 @@ body {
 }
 
 .paragraph-library {
-  color: #a7a7a7;
+  color: #fff;
   padding: 15px 20px;
+  padding-bottom: 35px;
 }
 
 /* finish styles Explaining the gamenet item  */

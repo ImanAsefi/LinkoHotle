@@ -17,6 +17,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 #nav {
@@ -142,10 +143,6 @@ a {
   transform: rotate(-180deg);
 }
 
-.profile.hidden {
-  display: none;
-  opacity: 0;
-}
 
 .profile {
   min-width: 180px;

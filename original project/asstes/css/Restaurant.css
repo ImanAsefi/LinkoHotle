@@ -127,7 +127,7 @@ body {
 
 .box-sub>p {
     padding: 20px 10px;
-    color: #a7a7a7;
+    color: #fff;
 }
 
 .img-box {
@@ -196,7 +196,7 @@ h2 {
 }
 
 .item-coffe__shop>p {
-    color: #a7a7a7;
+    color: #fff;
     text-align: center;
     padding: 7px 15px;
 }

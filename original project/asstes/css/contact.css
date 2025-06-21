@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'IRANSANS';
+    height: 100%;
+}
+
+input::placeholder{
+    font-family:"IRANSANS";
+}
+
+#contact {
+    border-radius: 15px;
+    display: flex;
+    background-color: #333;
+    font-weight: 600;
+    color: #fff;
+    width: 75rem;
+    margin: 60px auto 40px auto;
+    box-shadow: 15px 12px 30px #00000063;
+}
+
+.title-form {
+    color: orange;
+}
+
+.contact-us {
+    padding: 1rem;
+    flex: 1;
+}
+
+.contact-us p {
+    margin: 1rem 0;
+}
+
+.form-group {
+    margin: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    margin-right: 15px;
+}
+
+input::placeholder,
+textarea {
+    font-family: "IRANSANS";
+}
+
+.form-group input,
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+input{
+    height: 50px;
+}
+
+.btn-form {
+    width: 160px;
+    margin: 5px auto;
+}
+
+.btn {
+    font-family: "IRANSANS";
+    margin-top: 20px;
+    width: 160px;
+    height: 50px;
+    padding-right: 50px;
+    color: #fff;
+    background-color: #333;
+    border: 2px solid orange;
+    padding: 10px 25px;
+    transition-duration: 0.7s;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: orange;
+    box-shadow: 5px 4px 15px rgba(255, 166, 0, 0.575);
+}
+
+.map {
+    flex: 1;
+    border-radius: 15px;
+}
+
+iframe {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.text-primary {
+    color: orange;
+}
+
+@media screen and (max-width: 480px) {
+    #contact {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .map {
+        height: 300px;
+    }
+
+    iframe {
+        border-radius: 0 0 15px 15px;
+    }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .contact-us,
+    .map {
+        width: 100%;
+    }
+
+    #contact {
+        width: 90%;
+    }
+}

@@ -5,25 +5,53 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/svg+xml" href="asstes/images/edge-brands.svg">
-  <link rel="stylesheet" href="asstes/css/footer.css" />
-  <link rel="stylesheet" href="asstes/css/fonts.css" />
-  <link rel="stylesheet" href="asstes/css/Navbar.css" />
-  <link rel="stylesheet" href="../swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../original%20project/asstes/css/footer.css" />
+  <link rel="stylesheet" href="../original%20project/asstes/css/fonts.css" />
+  <link rel="stylesheet" href="../original%20project/asstes/css/Navbar.css" />
+  <link rel="stylesheet" href="asstes/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="./asstes/css/hobby.css" />
+  <link rel="stylesheet" href="../original%20project/asstes/css/hobby.css" />
   <title>هتل لینکو | صفحه سرگرمی</title>
 </head>
 
 <body>
   <!-- start header -->
   <header>
-    <!-- start Navbar -->
-    <div id="header-placeholder"></div>
+    <!-- start header -->
+    <nav id="nav" style="direction: rtl;">
+      <div class="nav-top-section">
+        <div class="name-hotel">
+          <span class="text-primary">
+            <i class="fab fa-edge icon-nav"></i>
+          </span>
+          <h1 class="h1-nav">لینکو</h1>
+        </div>
 
-    <!-- محتوای صفحه -->
-    <main>
+        <div class="auth-buttons">
+          <!-- دکمه ورود/ثبت‌نام -->
+          <div class="authentication authentication-signup hidden" id="join">
+            <a href="sign-in.html" class="text-authentication">ورود | عضویت</a>
+          </div>
 
-    </main>
+          <!-- پروفایل کاربر (مخفی پیش‌فرض) -->
+          <div class="authentication authentication-user hidden" id="seeProfile">
+            <i class="fas fa-user icon-authentication"></i>
+            <a class="text-authentication" id="username" href="Edit-profile.html">نام کاربر</a>
+          </div>
+
+          <script src="asstes/js/header.js"></script>
+
+        </div>
+      </div>
+
+      <ul class="menu">
+        <li><a href="index.html">صفحه اصلی</a></li>
+        <li><a href="Restaurant.html">رستوران</a></li>
+        <li><a href="hobby.html" class="main-header__link">سرگرمی ها</a></li>
+        <li><a href="room.html">اتاق</a></li>
+        <li><a href="contact-us.html">ارتباط با ما</a></li>
+      </ul>
+    </nav>
     <!-- finish Navbar -->
     <!-- start header title -->
     <div class="header">
@@ -265,8 +293,10 @@
     </div>
   </footer>
   <!-- finish footer -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-  <script src="asstes/js/script.js"></script>
+  <script src="../original%20project/asstes/js/swiper.js"></script>
+  <script src="asstes/swiper/swiper-bundle.min.js"></script>
+  <script src="../original%20project/asstes/js/script.js"></script>
+  <script src="../original%20project/asstes/js/header.js"></script>
 </body>
 
 </html>

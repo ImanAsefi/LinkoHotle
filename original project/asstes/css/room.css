@@ -94,7 +94,7 @@ body {
 .content-subject {
   text-align: center;
   margin: 40px auto 25px auto;
-  background-color: #333333e0;
+  background-color: #333;
   border-radius: 15px;
   width: 75rem;
   box-shadow: 15px 12px 30px #00000063;
@@ -109,7 +109,7 @@ body {
 .paragraph-subject {
   display: flex;
   justify-content: space-evenly;
-  color: #a7a7a7;
+  color: #fff;
 }
 
 .paragraph-subject>p {
@@ -150,7 +150,7 @@ body {
 }
 
 .item-box>p {
-  color: #a7a7a7;
+  color: #fff;
   padding: 10px;
 }
 
